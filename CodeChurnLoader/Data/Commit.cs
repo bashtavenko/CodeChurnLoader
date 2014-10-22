@@ -13,5 +13,7 @@ namespace CodeChurnLoader.Data
         public int NumberOfAdditions { get; set; }
         public int NumberOfDeletions { get; set; }
         public int NumberOfChanges { get; set; }
+
+        public List<File> Files { get; set; }
     }
 }

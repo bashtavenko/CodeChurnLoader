@@ -23,7 +23,7 @@ namespace CodeChurnLoader.Tests.IntegrationTests
         [Test]
         public void GitHubProvider_GetCommits_ShouldGetList()
         {
-            List<string> commits = _IGitProvider.GetCommits("codemetricsloader", DateTime.Now.AddMonths(-1), DateTime.Now);
+            List<Commit> commits = _IGitProvider.GetCommits("codemetricsloader", DateTime.Now.AddMonths(-1), DateTime.Now);
             Assert.IsNotNull(commits);
             CollectionAssert.IsNotEmpty(commits);
         }
