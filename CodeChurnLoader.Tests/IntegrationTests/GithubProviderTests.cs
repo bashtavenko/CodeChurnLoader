@@ -1,31 +1,39 @@
-﻿using CodeChurnLoader.Data;
-using NUnit.Framework;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
+
+using NUnit.Framework;
+
+using CodeChurnLoader.Data;
 
 namespace CodeChurnLoader.Tests.IntegrationTests
 {
     [TestFixture]
     public class GithubProviderTests
     {
-        private IGitProvider _IGitProvider;
+        private IGitProvider _IGitProvider;        
 
         [TestFixtureSetUp]
         public void SetUp()
-        {
-            _IGitProvider = new GithubProvider("stanbpublic");
+        {            
+            RepoCredentials repoCredentials = ConfigurationManager.GetSection("RepoCredentials") as RepoCredentials;
+            _IGitProvider = new Data.Github.GithubProvider(repoCredentials);
         }
-
 
         [Test]
         public void GitHubProvider_GetCommits_ShouldGetList()
-        {
-            List<string> commits = _IGitProvider.GetCommits("codemetricsloader", DateTime.Now.AddMonths(-1), DateTime.Now);
+        {            
+            List<Commit> commits = _IGitProvider.GetCommits("CodeMetricsLoader", DateTime.Now.AddYears(-2), DateTime.Now);
             Assert.IsNotNull(commits);
             CollectionAssert.IsNotEmpty(commits);
+        }
+
+        [Test]
+        public void GitHubProvider_GetCommits_ShouldNotGetList()
+        {
+            List<Commit> commits = _IGitProvider.GetCommits("CodeMetricsLoader", DateTime.Now.AddYears(-2), DateTime.Now.AddYears(-1));
+            Assert.IsNotNull(commits);
+            CollectionAssert.IsEmpty(commits);
         }
     }
 }

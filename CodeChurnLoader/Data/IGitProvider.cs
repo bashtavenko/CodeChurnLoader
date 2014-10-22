@@ -5,7 +5,6 @@ namespace CodeChurnLoader.Data
 {
     public interface IGitProvider
     {
-        List<string> GetCommits(string repo, DateTime from, DateTime to);
-        Commit GetOneCommit(string repo, string sha);
+        List<Commit> GetCommits(string repo, DateTime from, DateTime to);        
     }
 }
