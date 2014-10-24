@@ -38,11 +38,18 @@
     <Reference Include="AutoMapper.Net4">
       <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.Net4.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
@@ -55,13 +62,19 @@
   <ItemGroup>
     <Compile Include="AutoMapperConfig.cs" />
     <Compile Include="Data\Commit.cs" />
+    <Compile Include="Data\DimCommit.cs" />
+    <Compile Include="Data\DimDate.cs" />
+    <Compile Include="Data\DimFile.cs" />
+    <Compile Include="Data\DimRepo.cs" />
+    <Compile Include="Data\FactCodeChurn.cs" />
     <Compile Include="Data\File.cs" />
-    <Compile Include="Data\GithubProvider.cs" />
+    <Compile Include="Data\Github\GithubProvider.cs" />
     <Compile Include="Data\Github\Commit.cs" />
     <Compile Include="Data\Github\Stats.cs" />
     <Compile Include="Data\Github\File.cs" />
     <Compile Include="Data\Github\CommitSummary.cs" />
     <Compile Include="Data\IGitProvider.cs" />
+    <Compile Include="Data\LoaderContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepoCredentials.cs" />

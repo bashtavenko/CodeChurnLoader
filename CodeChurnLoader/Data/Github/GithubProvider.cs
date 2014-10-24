@@ -7,7 +7,7 @@ using System.Text;
 using AutoMapper;
 using Newtonsoft.Json;
 
-namespace CodeChurnLoader.Data
+namespace CodeChurnLoader.Data.Github
 {
     public class GithubProvider : IGitProvider
     {
@@ -31,7 +31,7 @@ namespace CodeChurnLoader.Data
             AutoMapperConfig.CreateMaps();
         }
 
-        public List<Commit> GetCommits(string repo, DateTime from, DateTime to)
+        public List<Data.Commit> GetCommits(string repo, DateTime from, DateTime to)
         {
             HttpResponseMessage response = _httpClient.GetAsync(string.Format("repos/{0}/{1}/commits", _owner, repo)).Result;
             if (response.StatusCode != System.Net.HttpStatusCode.OK)
@@ -41,7 +41,7 @@ namespace CodeChurnLoader.Data
             string json = response.Content.ReadAsStringAsync().Result;
             var commitSummaries = JsonConvert.DeserializeObject<List<CodeChurnLoader.Data.Github.CommitSummary>>(json);
 
-            List<Commit> commits = new List<Commit>();
+            var commits = new List<Data.Commit>();
             foreach (var commitSummary in commitSummaries)
             {
                 var commit = GetOneCommit(repo, commitSummary.Sha);
@@ -53,12 +53,12 @@ namespace CodeChurnLoader.Data
             return commits;
         }
 
-        private Commit GetOneCommit(string repo, string sha)
+        private Data.Commit GetOneCommit(string repo, string sha)
         {
             HttpResponseMessage response = _httpClient.GetAsync(string.Format("repos/{0}/{1}/commits/{2}", _owner, repo, sha)).Result;
             string json = response.Content.ReadAsStringAsync().Result;
             var repoCommit = JsonConvert.DeserializeObject<CodeChurnLoader.Data.Github.Commit>(json);
-            Commit commit = Mapper.Map<Commit>(repoCommit);
+            Data.Commit commit = Mapper.Map<Data.Commit>(repoCommit);
             return commit;
         }
     }

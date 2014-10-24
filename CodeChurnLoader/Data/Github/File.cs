@@ -22,7 +22,7 @@ namespace CodeChurnLoader.Data.Github
         [XmlElement("changes")]
         public int Changes { get; set; }
 
-        [XmlElement("contents_url")]
+        [XmlElement("raw_url")]
         public int Url { get; set; }
     }
 }

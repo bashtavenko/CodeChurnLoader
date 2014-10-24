@@ -4,6 +4,7 @@
     {
         public string Sha { get; set; }
         public string FileName { get; set; }
+        public string Url { get; set; }
         public int NumberOfAdditions { get; set; }
         public int NumberOfDeletions { get; set; }
         public int NumberOfChanges { get; set; }

@@ -17,7 +17,7 @@ namespace CodeChurnLoader.Tests.IntegrationTests
         public void SetUp()
         {            
             RepoCredentials repoCredentials = ConfigurationManager.GetSection("RepoCredentials") as RepoCredentials;
-            _IGitProvider = new GithubProvider(repoCredentials);
+            _IGitProvider = new Data.Github.GithubProvider(repoCredentials);
         }
 
         [Test]
