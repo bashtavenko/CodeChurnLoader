@@ -64,7 +64,9 @@
   <ItemGroup>
     <Compile Include="IntegrationTests\ContextTests.cs" />
     <Compile Include="IntegrationTests\GithubProviderTests.cs" />
+    <Compile Include="IntegrationTests\LoaderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestLogger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

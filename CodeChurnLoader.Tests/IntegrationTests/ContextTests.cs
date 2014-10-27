@@ -51,6 +51,7 @@ namespace CodeChurnLoader.Tests.IntegrationTests
             var date = new DimDate();
             var churn = new FactCodeChurn
             {                
+                Commit = commit,
                 Date = date,
                 LinesAdded = 10,
                 LinesDeleted = 2,
