@@ -25,9 +25,16 @@ namespace CodeChurnLoader
         {
             _logger.Log(string.Format("Getting commits for {0}...", repoName));
             List<Commit> commits = provider.GetCommits(repoName, from, to);
-            _logger.Log("Saving to database...");
-            SaveCommits(repoName, commits);
-            _logger.Log("Done.");
+            if (commits.Any())
+            {
+                _logger.Log("Saving to database...");
+                SaveCommits(repoName, commits);
+                _logger.Log("Done.");
+            }
+            else
+            {
+                _logger.Log("No commits for this date range.");
+            }
         }
 
         /// <summary>

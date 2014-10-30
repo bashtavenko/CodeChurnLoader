@@ -18,7 +18,7 @@ namespace CodeChurnLoader.Data.Github
         {
             _owner = repoCredentials.Owner;
             _httpClient = new HttpClient();
-            _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
             _httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(_owner);
             if (!string.IsNullOrEmpty(repoCredentials.UserName))
             {
@@ -32,16 +32,17 @@ namespace CodeChurnLoader.Data.Github
         }
 
         public List<Data.Commit> GetCommits(string repo, DateTime from, DateTime to)
-        {
-            HttpResponseMessage response = _httpClient.GetAsync(string.Format("repos/{0}/{1}/commits", _owner, repo)).Result;
+        {            
+            HttpResponseMessage response = _httpClient.GetAsync(string.Format("repos/{0}/{1}/commits?since={2:s}&until={3:s}", _owner, repo, from, to)).Result;
             if (response.StatusCode != System.Net.HttpStatusCode.OK)
             {
                 throw new ApplicationException(string.Format("Cannot get data from remote repo - {0}", response.StatusCode));
             }
+
+            var commits = new List<Data.Commit>();
             string json = response.Content.ReadAsStringAsync().Result;
             var commitSummaries = JsonConvert.DeserializeObject<List<CodeChurnLoader.Data.Github.CommitSummary>>(json);
 
-            var commits = new List<Data.Commit>();
             foreach (var commitSummary in commitSummaries)
             {
                 var commit = GetOneCommit(repo, commitSummary.Sha);
@@ -50,6 +51,7 @@ namespace CodeChurnLoader.Data.Github
                     commits.Add(commit);
                 }
             }
+            
             return commits;
         }
 
