@@ -51,7 +51,7 @@ namespace CodeChurnLoader.Tests.IntegrationTests
                 }
             };
 
-            loader.SaveCommits("CodeMetricsLoader", commits);
+            loader.SaveCommits(DateTime.Now, "CodeMetricsLoader", commits);
         }
 
         [Test]

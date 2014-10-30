@@ -15,7 +15,8 @@ namespace CodeChurnLoader
             {
                 return;
             }
-
+            config.SetupDates();
+            
             var logger = new Logger();
             LoaderContext context = null;
             try

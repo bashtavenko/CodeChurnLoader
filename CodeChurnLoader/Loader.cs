@@ -28,7 +28,7 @@ namespace CodeChurnLoader
             if (commits.Any())
             {
                 _logger.Log("Saving to database...");
-                SaveCommits(repoName, commits);
+                SaveCommits(from, repoName, commits);
                 _logger.Log("Done.");
             }
             else
@@ -42,9 +42,9 @@ namespace CodeChurnLoader
         /// </summary>
         /// <param name="repoName">Name of the repository</param>
         /// <param name="commits">Commit list</param>
-        public void SaveCommits(string repoName, List<Commit> commits)
+        public void SaveCommits(DateTime runDate, string repoName, List<Commit> commits)
         {
-            var dimDate = new DimDate();
+            var dimDate = new DimDate(runDate);
             dimDate = GetOrAddEntity<DimDate>(_context.Dates, dimDate, delegate(DimDate d) { return d.Date == dimDate.Date; });
 
             var repo = new DimRepo { Name = repoName };
