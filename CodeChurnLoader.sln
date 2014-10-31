@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChurnLoader.Tests", "Co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E682BB8-9E19-4929-9DFD-474ECB8245A5}"
 	ProjectSection(SolutionItems) = preProject
-		CodeMetricsWarehouse.png = CodeMetricsWarehouse.png
+		CodeChurnDB.png = CodeChurnDB.png
 		ExcelReport.png = ExcelReport.png
 		PowershellCodeChurn.png = PowershellCodeChurn.png
 	EndProjectSection
