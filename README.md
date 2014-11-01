@@ -6,7 +6,7 @@ hosted on Github.
 
 Code churn is stored in database where it can be reported.
 
-For example, weekly churn
+For example,
 
 ![Weekly churn](/../screenshots/ExcelReport.png?raw=true "Weekly churn")
 
