@@ -18,5 +18,6 @@ namespace CodeChurnLoader.Data
         public int LinesAdded { get; set; }
         public int LinesModified { get; set; }
         public int LinesDeleted { get; set; }
+        public int TotalChurn { get; set; }
     }
 }

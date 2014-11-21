@@ -41,7 +41,7 @@ namespace CodeChurnLoader.Data.Github
 
             var commits = new List<Data.Commit>();
             string json = response.Content.ReadAsStringAsync().Result;
-            var commitSummaries = JsonConvert.DeserializeObject<List<CodeChurnLoader.Data.Github.CommitSummary>>(json);
+            var commitSummaries = JsonConvert.DeserializeObject<List<CodeChurnLoader.Data.Github.Commit>>(json);
 
             foreach (var commitSummary in commitSummaries)
             {
@@ -53,11 +53,15 @@ namespace CodeChurnLoader.Data.Github
             }
             
             return commits;
-        }
+        }        
 
         private Data.Commit GetOneCommit(string repo, string sha)
         {
             HttpResponseMessage response = _httpClient.GetAsync(string.Format("repos/{0}/{1}/commits/{2}", _owner, repo, sha)).Result;
+            if (response.StatusCode != System.Net.HttpStatusCode.OK)
+            {
+                throw new ApplicationException(string.Format("Cannot get data from remote repo - {0}", response.StatusCode));
+            }
             string json = response.Content.ReadAsStringAsync().Result;
             var repoCommit = JsonConvert.DeserializeObject<CodeChurnLoader.Data.Github.Commit>(json);
             Data.Commit commit = Mapper.Map<Data.Commit>(repoCommit);

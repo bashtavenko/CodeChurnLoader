@@ -23,13 +23,11 @@ namespace CodeChurnLoader
 
         public void Load(IGitProvider provider, string repoName, DateTime from, DateTime to)
         {
-            _logger.Log(string.Format("Getting commits for {0}...", repoName));
+            _logger.Log(string.Format("Getting {0} commits from {1:s} to {2:s} ...", repoName, from, to));
             List<Commit> commits = provider.GetCommits(repoName, from, to);
             if (commits.Any())
             {
-                _logger.Log("Saving to database...");
-                SaveCommits(from, repoName, commits);
-                _logger.Log("Done.");
+                SaveCommits(from, repoName, commits);                
             }
             else
             {
@@ -44,9 +42,17 @@ namespace CodeChurnLoader
         /// <param name="commits">Commit list</param>
         public void SaveCommits(DateTime runDate, string repoName, List<Commit> commits)
         {
-            var dimDate = new DimDate(runDate);
-            dimDate = GetOrAddEntity<DimDate>(_context.Dates, dimDate, delegate(DimDate d) { return d.Date == dimDate.Date; });
+            if (HaveDataForThisDate(runDate))
+            {
+                _logger.Log("Already have data for this date range.");
+                return;
+            }
 
+            _logger.Log("Saving to database...");
+
+            var dimDate = new DimDate(runDate);
+            dimDate = GetOrAddEntity<DimDate>(_context.Dates, dimDate, delegate(DimDate d) { return d.Date == dimDate.Date; });            
+            
             var repo = new DimRepo { Name = repoName };
             repo = GetOrAddEntity<DimRepo>(_context.Repos, repo, delegate(DimRepo r) { return r.Name == repo.Name; });
             FactCodeChurn churn;
@@ -71,8 +77,9 @@ namespace CodeChurnLoader
                     _context.Churn.Add(churn);
                 }
 
-                _context.SaveChanges();
-            }            
+                _context.SaveChanges();            
+            }
+            _logger.Log("Done.");
         }
 
         /// <summary>
@@ -99,6 +106,11 @@ namespace CodeChurnLoader
                 _context.SaveChanges();
                 return src;
             }
+        }
+
+        private bool HaveDataForThisDate (DateTime date)
+        {
+            return _context.Churn.Where(c => c.Date.Date == date.Date).Any();
         }
     }
 }

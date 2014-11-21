@@ -1,20 +1,26 @@
 ﻿using System.Collections.Generic;
-using System.Xml.Serialization;
+using Newtonsoft.Json;
 
 namespace CodeChurnLoader.Data.Github
 {
     public class Commit
     {
-        [XmlElement("sha")]
+        [JsonProperty("sha")]
         public string Sha { get; set; }
 
-        [XmlElement("url")]
+        [JsonProperty("url")]
         public string Url { get; set; }
 
-        [XmlElement("stats")]
+        [JsonProperty("stats")]
         public Stats Stats { get; set; }
 
-        [XmlElement("files")]
+        [JsonProperty("commit")]
+        public CommitProperties CommitProperties { get; set; }
+
+        [JsonProperty("committer")]
+        public Committer Committer { get; set; }
+
+        [JsonProperty("files")]
         public List<File> Files { get; set; }        
     }
 }

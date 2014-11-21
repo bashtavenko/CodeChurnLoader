@@ -55,7 +55,8 @@ namespace CodeChurnLoader.Tests.IntegrationTests
                 Date = date,
                 LinesAdded = 10,
                 LinesDeleted = 2,
-                LinesModified = 1
+                LinesModified = 1,
+                TotalChurn = 13
             };               
             _context.Churn.Add(churn);
             _context.SaveChanges();            

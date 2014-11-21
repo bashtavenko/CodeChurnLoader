@@ -1,28 +1,28 @@
-﻿using System.Xml.Serialization;
+﻿using Newtonsoft.Json;
 
 namespace CodeChurnLoader.Data.Github
 {
     public class File
     {
-        [XmlElement("sha")]
+        [JsonProperty("sha")]
         public string Sha { get; set; }
 
-        [XmlElement("filename")]
+        [JsonProperty("filename")]
         public string Filename { get; set; }
 
-        [XmlElement("status")]
+        [JsonProperty("status")]
         public string Status { get; set; }
 
-        [XmlElement("additions")]
+        [JsonProperty("additions")]
         public int Additions { get; set; }
         
-        [XmlElement("additions")]
+        [JsonProperty("deletions")]
         public int Deletions { get; set; }
 
-        [XmlElement("changes")]
+        [JsonProperty("changes")]
         public int Changes { get; set; }
 
-        [XmlElement("raw_url")]
-        public int Url { get; set; }
+        [JsonProperty("blob_url")]        
+        public string Url { get; set; }
     }
 }

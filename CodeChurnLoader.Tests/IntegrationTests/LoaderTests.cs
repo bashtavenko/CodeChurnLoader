@@ -26,7 +26,11 @@ namespace CodeChurnLoader.Tests.IntegrationTests
                     Url = "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/9c4800fdeb47aa8f990105fd894ab1f125efc51e",
                     NumberOfAdditions = 10,
                     NumberOfChanges = 2,
-                    NumberOfDeletions = 3,
+                    NumberOfDeletions = 3,      
+                    Message = "Test",
+                    Committer = "Joe Doe",
+                    CommitterAvatarUrl = "https://avatars.githubusercontent.com/u/1820912?v=3",
+                    Date = DateTime.Now,
                     Files = new List<File>
                     {
                         new File
@@ -36,7 +40,7 @@ namespace CodeChurnLoader.Tests.IntegrationTests
                             FileName = "file1.cs",
                             NumberOfAdditions = 6,
                             NumberOfChanges = 1,
-                            NumberOfDeletions = 3
+                            NumberOfDeletions = 3,                            
                         },
                         new File
                         {

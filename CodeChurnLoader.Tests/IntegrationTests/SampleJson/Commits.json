@@ -1,0 +1,142 @@
+﻿[
+    {
+        "sha": "21bbb99934a36899c3c65347ea886569823c9a54",
+        "commit": {
+            "author": {
+                "name": "Stan",
+                "email": "stanbpublic@live.com",
+                "date": "2014-11-20T14:24:59Z"
+            },
+            "committer": {
+                "name": "Stan",
+                "email": "stanbpublic@live.com",
+                "date": "2014-11-20T14:24:59Z"
+            },
+            "message": "Added FileName field to DimTarget",
+            "tree": {
+                "sha": "6366675f934093ecff71fbb65ca1fce4c26a2b21",
+                "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/git/trees/6366675f934093ecff71fbb65ca1fce4c26a2b21"
+            },
+            "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/git/commits/21bbb99934a36899c3c65347ea886569823c9a54",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/21bbb99934a36899c3c65347ea886569823c9a54",
+        "html_url": "https://github.com/StanBPublic/CodeMetricsLoader/commit/21bbb99934a36899c3c65347ea886569823c9a54",
+        "comments_url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/21bbb99934a36899c3c65347ea886569823c9a54/comments",
+        "author": {
+            "login": "StanBPublic",
+            "id": 1820912,
+            "avatar_url": "https://avatars.githubusercontent.com/u/1820912?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/StanBPublic",
+            "html_url": "https://github.com/StanBPublic",
+            "followers_url": "https://api.github.com/users/StanBPublic/followers",
+            "following_url": "https://api.github.com/users/StanBPublic/following{/other_user}",
+            "gists_url": "https://api.github.com/users/StanBPublic/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/StanBPublic/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/StanBPublic/subscriptions",
+            "organizations_url": "https://api.github.com/users/StanBPublic/orgs",
+            "repos_url": "https://api.github.com/users/StanBPublic/repos",
+            "events_url": "https://api.github.com/users/StanBPublic/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/StanBPublic/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "StanBPublic",
+            "id": 1820912,
+            "avatar_url": "https://avatars.githubusercontent.com/u/1820912?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/StanBPublic",
+            "html_url": "https://github.com/StanBPublic",
+            "followers_url": "https://api.github.com/users/StanBPublic/followers",
+            "following_url": "https://api.github.com/users/StanBPublic/following{/other_user}",
+            "gists_url": "https://api.github.com/users/StanBPublic/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/StanBPublic/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/StanBPublic/subscriptions",
+            "organizations_url": "https://api.github.com/users/StanBPublic/orgs",
+            "repos_url": "https://api.github.com/users/StanBPublic/repos",
+            "events_url": "https://api.github.com/users/StanBPublic/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/StanBPublic/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "9c4800fdeb47aa8f990105fd894ab1f125efc51e",
+                "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/9c4800fdeb47aa8f990105fd894ab1f125efc51e",
+                "html_url": "https://github.com/StanBPublic/CodeMetricsLoader/commit/9c4800fdeb47aa8f990105fd894ab1f125efc51e"
+            }
+        ]
+    },
+    {
+        "sha": "9c4800fdeb47aa8f990105fd894ab1f125efc51e",
+        "commit": {
+            "author": {
+                "name": "Stan",
+                "email": "stanbpublic@live.com",
+                "date": "2014-10-13T12:39:20Z"
+            },
+            "committer": {
+                "name": "Stan",
+                "email": "stanbpublic@live.com",
+                "date": "2014-10-13T12:39:20Z"
+            },
+            "message": "formatting",
+            "tree": {
+                "sha": "e2a41f1bc1a2bf234371ec64edd96b17df5cb412",
+                "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/git/trees/e2a41f1bc1a2bf234371ec64edd96b17df5cb412"
+            },
+            "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/git/commits/9c4800fdeb47aa8f990105fd894ab1f125efc51e",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/9c4800fdeb47aa8f990105fd894ab1f125efc51e",
+        "html_url": "https://github.com/StanBPublic/CodeMetricsLoader/commit/9c4800fdeb47aa8f990105fd894ab1f125efc51e",
+        "comments_url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/9c4800fdeb47aa8f990105fd894ab1f125efc51e/comments",
+        "author": {
+            "login": "StanBPublic",
+            "id": 1820912,
+            "avatar_url": "https://avatars.githubusercontent.com/u/1820912?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/StanBPublic",
+            "html_url": "https://github.com/StanBPublic",
+            "followers_url": "https://api.github.com/users/StanBPublic/followers",
+            "following_url": "https://api.github.com/users/StanBPublic/following{/other_user}",
+            "gists_url": "https://api.github.com/users/StanBPublic/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/StanBPublic/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/StanBPublic/subscriptions",
+            "organizations_url": "https://api.github.com/users/StanBPublic/orgs",
+            "repos_url": "https://api.github.com/users/StanBPublic/repos",
+            "events_url": "https://api.github.com/users/StanBPublic/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/StanBPublic/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "StanBPublic",
+            "id": 1820912,
+            "avatar_url": "https://avatars.githubusercontent.com/u/1820912?v=3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/StanBPublic",
+            "html_url": "https://github.com/StanBPublic",
+            "followers_url": "https://api.github.com/users/StanBPublic/followers",
+            "following_url": "https://api.github.com/users/StanBPublic/following{/other_user}",
+            "gists_url": "https://api.github.com/users/StanBPublic/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/StanBPublic/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/StanBPublic/subscriptions",
+            "organizations_url": "https://api.github.com/users/StanBPublic/orgs",
+            "repos_url": "https://api.github.com/users/StanBPublic/repos",
+            "events_url": "https://api.github.com/users/StanBPublic/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/StanBPublic/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "aee298477d5820d7be46d853814304fd9a8fbb5b",
+                "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/aee298477d5820d7be46d853814304fd9a8fbb5b",
+                "html_url": "https://github.com/StanBPublic/CodeMetricsLoader/commit/aee298477d5820d7be46d853814304fd9a8fbb5b"
+            }
+        ]
+    } 
+]

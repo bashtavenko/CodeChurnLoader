@@ -41,6 +41,9 @@ namespace CodeChurnLoader.Data
             modelBuilder.Entity<DimCommit>().Property(k => k.Sha).HasColumnType("varchar").HasMaxLength(255);
             modelBuilder.Entity<DimCommit>().Property(k => k.Sha).IsRequired();
             modelBuilder.Entity<DimCommit>().Property(k => k.Url).IsRequired();
+            modelBuilder.Entity<DimCommit>().Property(k => k.Committer).IsRequired();
+            modelBuilder.Entity<DimCommit>().Property(k => k.Committer).HasColumnType("varchar").HasMaxLength(255);
+            modelBuilder.Entity<DimCommit>().Property(k => k.Message).HasColumnType("varchar").HasMaxLength(255);            
             
             modelBuilder.Entity<DimFile>().HasKey(k => k.FileId);
             modelBuilder.Entity<DimFile>().Property(k => k.FileName).HasColumnType("varchar").HasMaxLength(255);
@@ -48,6 +51,7 @@ namespace CodeChurnLoader.Data
             modelBuilder.Entity<DimFile>().Property(k => k.FileExtension).HasColumnType("varchar").HasMaxLength(255);
             modelBuilder.Entity<DimFile>().Property(k => k.FileExtension).IsRequired();
             modelBuilder.Entity<DimFile>().Property(k => k.Url).IsRequired();
+            
                         
             modelBuilder.Entity<DimDate>().HasKey(k => k.DateId);
             

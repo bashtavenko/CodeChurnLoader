@@ -71,11 +71,12 @@
     <Compile Include="Data\DimRepo.cs" />
     <Compile Include="Data\FactCodeChurn.cs" />
     <Compile Include="Data\File.cs" />
+    <Compile Include="Data\Github\Committer.cs" />
+    <Compile Include="Data\Github\CommitProperties.cs" />
     <Compile Include="Data\Github\GithubProvider.cs" />
     <Compile Include="Data\Github\Commit.cs" />
     <Compile Include="Data\Github\Stats.cs" />
     <Compile Include="Data\Github\File.cs" />
-    <Compile Include="Data\Github\CommitSummary.cs" />
     <Compile Include="Data\IGitProvider.cs" />
     <Compile Include="Data\LoaderContext.cs" />
     <Compile Include="Loader.cs" />

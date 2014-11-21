@@ -1,16 +1,17 @@
-﻿using System.Xml.Serialization;
+﻿using Newtonsoft.Json;
+using System.Xml.Serialization;
 
 namespace CodeChurnLoader.Data.Github
 {
     public class Stats
     {
-        [XmlElement("total")]
+        [JsonProperty("total")]
         public int Total { get; set; }
         
-        [XmlElement("additions")]
+        [JsonProperty("additions")]
         public int Additions { get; set; }
 
-        [XmlElement("deletions")]
+        [JsonProperty("deletions")]
         public int Deletions { get; set; }
     }
 }

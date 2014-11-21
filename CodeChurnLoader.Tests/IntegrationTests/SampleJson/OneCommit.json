@@ -1,0 +1,101 @@
+﻿{
+    "sha": "21bbb99934a36899c3c65347ea886569823c9a54",
+    "commit": {
+        "author": {
+            "name": "Stan",
+            "email": "StanBPublic@live.com",
+            "date": "2014-11-20T14:24:59Z"
+        },
+        "committer": {
+            "name": "Stan",
+            "email": "StanBPublic@live.com",
+            "date": "2014-11-20T14:24:59Z"
+        },
+        "message": "Added FileName field to DimTarget",
+        "tree": {
+            "sha": "6366675f934093ecff71fbb65ca1fce4c26a2b21",
+            "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/git/trees/6366675f934093ecff71fbb65ca1fce4c26a2b21"
+        },
+        "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/git/commits/21bbb99934a36899c3c65347ea886569823c9a54",
+        "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/21bbb99934a36899c3c65347ea886569823c9a54",
+    "html_url": "https://github.com/StanBPublic/CodeMetricsLoader/commit/21bbb99934a36899c3c65347ea886569823c9a54",
+    "comments_url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/21bbb99934a36899c3c65347ea886569823c9a54/comments",
+    "author": {
+        "login": "StanBPublic",
+        "id": 1820912,
+        "avatar_url": "https://avatars.githubusercontent.com/u/1820912?v=3",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/StanBPublic",
+        "html_url": "https://github.com/StanBPublic",
+        "followers_url": "https://api.github.com/users/StanBPublic/followers",
+        "following_url": "https://api.github.com/users/StanBPublic/following{/other_user}",
+        "gists_url": "https://api.github.com/users/StanBPublic/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/StanBPublic/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/StanBPublic/subscriptions",
+        "organizations_url": "https://api.github.com/users/StanBPublic/orgs",
+        "repos_url": "https://api.github.com/users/StanBPublic/repos",
+        "events_url": "https://api.github.com/users/StanBPublic/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/StanBPublic/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "StanBPublic",
+        "id": 1820912,
+        "avatar_url": "https://avatars.githubusercontent.com/u/1820912?v=3",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/StanBPublic",
+        "html_url": "https://github.com/StanBPublic",
+        "followers_url": "https://api.github.com/users/StanBPublic/followers",
+        "following_url": "https://api.github.com/users/StanBPublic/following{/other_user}",
+        "gists_url": "https://api.github.com/users/StanBPublic/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/StanBPublic/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/StanBPublic/subscriptions",
+        "organizations_url": "https://api.github.com/users/StanBPublic/orgs",
+        "repos_url": "https://api.github.com/users/StanBPublic/repos",
+        "events_url": "https://api.github.com/users/StanBPublic/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/StanBPublic/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "9c4800fdeb47aa8f990105fd894ab1f125efc51e",
+            "url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/9c4800fdeb47aa8f990105fd894ab1f125efc51e",
+            "html_url": "https://github.com/StanBPublic/CodeMetricsLoader/commit/9c4800fdeb47aa8f990105fd894ab1f125efc51e"
+        }
+    ],
+    "stats": {
+        "total": 90,
+        "additions": 49,
+        "deletions": 41
+    },
+    "files": [
+        {
+            "sha": "e97d008f40d4294ac98b70a1dac5fb79cf864572",
+            "filename": "CodeMetricsLoader.Tests/IntegrationTests/ContextTests.cs",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 3,
+            "changes": 7,
+            "blob_url": "https://github.com/StanBPublic/CodeMetricsLoader/blob/21bbb99934a36899c3c65347ea886569823c9a54/CodeMetricsLoader.Tests/IntegrationTests/ContextTests.cs",
+            "raw_url": "https://github.com/StanBPublic/CodeMetricsLoader/raw/21bbb99934a36899c3c65347ea886569823c9a54/CodeMetricsLoader.Tests/IntegrationTests/ContextTests.cs",
+            "contents_url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/contents/CodeMetricsLoader.Tests/IntegrationTests/ContextTests.cs?ref=21bbb99934a36899c3c65347ea886569823c9a54",
+            "patch": "@@ -36,10 +36,11 @@ public void LoaderContext_Save_CanSave()\n         {\n             var target = new DimTarget\n             {\n-                Tag = \"prog-master\",\n-                Name = @\"C:\\My\\Src\\inbound-services\\WebServices.Inbound\\bin\\Debug\\WebServices.Inbound.dll\",                \n+                Name = @\"C:\\My\\Src\\inbound-services\\WebServices.Inbound\\bin\\Debug\\WebServices.Inbound.dll\",\n+                FileName = \"WebServices.Inbound.dll\",\n+                Tag = \"prog-master\"\n             };\n-\n+                        \n             var module = new DimModule\n             {\n                 Name = \"WebServices.Inbound\","
+        },
+        {
+            "sha": "cb5610856e89b5b217e2ba330b772611085b2b78",
+            "filename": "CodeMetricsLoader.Tests/IntegrationTests/LoaderTests.cs",
+            "status": "modified",
+            "additions": 35,
+            "deletions": 31,
+            "changes": 66,
+            "blob_url": "https://github.com/StanBPublic/CodeMetricsLoader/blob/21bbb99934a36899c3c65347ea886569823c9a54/CodeMetricsLoader.Tests/IntegrationTests/LoaderTests.cs",
+            "raw_url": "https://github.com/StanBPublic/CodeMetricsLoader/raw/21bbb99934a36899c3c65347ea886569823c9a54/CodeMetricsLoader.Tests/IntegrationTests/LoaderTests.cs",
+            "contents_url": "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/contents/CodeMetricsLoader.Tests/IntegrationTests/LoaderTests.cs?ref=21bbb99934a36899c3c65347ea886569823c9a54",
+            "patch": "@@ -1,9 +1,10 @@\n ﻿using System.Linq;\n using System.Xml.Linq;\n \n-using CodeMetricsLoader.Data;\n using NUnit.Framework;\n \n+using CodeMetricsLoader.Data;\n+\n namespace CodeMetricsLoader.Tests.IntegrationTests\n {\n     [TestFixture]\n@@ -12,43 +13,46 @@ public class LoaderTests\n         [Test]\n         public void Loader_Load_CanSaveXml()\n         {\n-            LoaderContext context = ContextTests.CreateTestContext();            \n-            Loader loader = new Loader(context, new TestLogger());\n-\n-            XElement metrics = UnitTests.LoaderTests.LoadXml();\n-            loader.Load(metrics, \"master\", false);\n-\n-            LoaderContext testContext = ContextTests.CreateTestContext();\n-\n-            // this can fail if running along with other tests\n-            Assert.AreEqual(130, testContext.Metrics.Count());\n-            Assert.AreEqual(1, testContext.Dates.Count());\n-            Assert.AreEqual(1, testContext.Targets.Count());\n-            Assert.AreEqual(1, testContext.Namespaces.Count());\n-            Assert.AreEqual(16, testContext.Types.Count());\n-            Assert.AreEqual(112, testContext.Members.Count());\n-\n-            var metricsFromDb = testContext.Metrics.Where(m => m.Namespace.Name == \"WebServices.Inbound\").First();\n-            Assert.IsNotNull(metricsFromDb);\n-            Assert.AreEqual(94, metricsFromDb.MaintainabilityIndex);\n-            Assert.AreEqual(112, metricsFromDb.CyclomaticComplexity);\n-            Assert.AreEqual(21, metricsFromDb.ClassCoupling);\n-            Assert.AreEqual(1, metricsFromDb.DepthOfInheritance);\n-            Assert.AreEqual(112, metricsFromDb.LinesOfCode);            \n+            using (LoaderContext context = ContextTests.CreateTestContext())\n+            {\n+                Loader loader = new Loader(context, new TestLogger());\n+\n+                XElement metrics = UnitTests.LoaderTests.LoadXml();\n+                loader.Load(metrics, \"master\", false);\n+            }\n+\n+            using (LoaderContext testContext = ContextTests.CreateTestContext())\n+            {             \n+                Assert.AreEqual(130, testContext.Metrics.Count());\n+                Assert.AreEqual(1, testContext.Dates.Count());\n+                Assert.AreEqual(1, testContext.Targets.Count());\n+                Assert.AreEqual(1, testContext.Namespaces.Count());\n+                Assert.AreEqual(16, testContext.Types.Count());\n+                Assert.AreEqual(112, testContext.Members.Count());\n+\n+                var metricsFromDb = testContext.Metrics.Where(m => m.Namespace.Name == \"WebServices.Inbound\").First();\n+                Assert.IsNotNull(metricsFromDb);\n+                Assert.AreEqual(94, metricsFromDb.MaintainabilityIndex);\n+                Assert.AreEqual(112, metricsFromDb.CyclomaticComplexity);\n+                Assert.AreEqual(21, metricsFromDb.ClassCoupling);\n+                Assert.AreEqual(1, metricsFromDb.DepthOfInheritance);\n+                Assert.AreEqual(112, metricsFromDb.LinesOfCode);\n+            }\n         }\n \n         [Test]\n         public void Loader_Load_CanSaveTheSameXmlTwice()\n         {\n-            LoaderContext context = ContextTests.CreateTestContext();\n+            using (LoaderContext context = ContextTests.CreateTestContext())\n+            {\n \n-            var loader = new Loader(context, new TestLogger());\n+                var loader = new Loader(context, new TestLogger());\n \n-            XElement metrics = UnitTests.LoaderTests.LoadXml();\n-            loader.Load(metrics, \"master\", false);\n-            loader.Load(metrics, \"master\", false);\n-            \n-            // ..no easy way to assert since database is not being drop when run multiple tests in the same class\n+                XElement metrics = UnitTests.LoaderTests.LoadXml();\n+                loader.Load(metrics, \"master\", false);\n+                loader.Load(metrics, \"master\", false);\n+                // ..no easy way to assert since database is not being drop when run multiple tests in the same class\n+            }\n         }\n     }\n }"
+        }    
+    ]
+}
