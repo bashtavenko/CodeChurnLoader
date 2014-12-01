@@ -18,6 +18,7 @@ namespace CodeChurnLoader
                 .ForMember(m => m.NumberOfChanges, opt => opt.MapFrom(src => src.Files.Sum(s => s.Changes)))
                 .ForMember(m => m.NumberOfDeletions, opt => opt.MapFrom(src => src.Stats.Deletions))
                 .ForMember(m => m.Message, opt => opt.MapFrom(src => src.CommitProperties.Message))
+                .ForMember(m => m.Committer, opt => opt.MapFrom(src => src.CommitProperties.Committer.Name ?? src.CommitProperties.Committer.Login))
                 .ForMember(m => m.Date, opt => opt.MapFrom(src => src.CommitProperties.Committer.Date));
 
             Mapper.CreateMap<CodeChurnLoader.Data.Commit, CodeChurnLoader.Data.DimCommit>()
@@ -26,7 +27,7 @@ namespace CodeChurnLoader
             Mapper.CreateMap<CodeChurnLoader.Data.File, CodeChurnLoader.Data.DimFile>();
 
             Mapper.CreateMap<CodeChurnLoader.Data.Commit, CodeChurnLoader.Data.FactCodeChurn>()
-                .ForMember(m => m.Date, opt => opt.Ignore())
+                .ForMember(m => m.Date, opt => opt.Ignore())                
                 .ForMember(m => m.LinesAdded, opt => opt.MapFrom(src => src.NumberOfAdditions))
                 .ForMember(m => m.LinesModified, opt => opt.MapFrom(src => src.NumberOfChanges))
                 .ForMember(m => m.LinesDeleted, opt => opt.MapFrom(src => src.NumberOfDeletions))

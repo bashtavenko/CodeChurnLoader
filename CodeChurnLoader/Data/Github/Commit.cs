@@ -8,7 +8,7 @@ namespace CodeChurnLoader.Data.Github
         [JsonProperty("sha")]
         public string Sha { get; set; }
 
-        [JsonProperty("url")]
+        [JsonProperty("html_url")]
         public string Url { get; set; }
 
         [JsonProperty("stats")]
