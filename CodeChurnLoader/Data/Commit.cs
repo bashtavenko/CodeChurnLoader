@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CodeChurnLoader.Data
 {
@@ -10,10 +7,9 @@ namespace CodeChurnLoader.Data
     {
         public string Sha { get; set; }
         public string Url { get; set; }
-        public int NumberOfAdditions { get; set; }
-        public int NumberOfDeletions { get; set; }
-        public int NumberOfChanges { get; set; }
-        public int TotalChurn { get { return NumberOfAdditions + NumberOfChanges + NumberOfDeletions; } }
+        public int Additions { get; set; }
+        public int Deletions { get; set; }
+        public int Changes { get; set; }
         public string Message { get; set; }
         public string Committer { get; set; }
         public string CommitterAvatarUrl { get; set; }

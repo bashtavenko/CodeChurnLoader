@@ -46,7 +46,7 @@ namespace CodeChurnLoader.Tests.IntegrationTests
             Assert.AreEqual(2, commits.Count);
             var commit = commits[0];
             Assert.AreEqual("21bbb99934a36899c3c65347ea886569823c9a54", commit.Sha);
-            Assert.AreEqual("https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/21bbb99934a36899c3c65347ea886569823c9a54", commit.Url);
+            Assert.AreEqual("https://github.com/StanBPublic/CodeMetricsLoader/commit/21bbb99934a36899c3c65347ea886569823c9a54", commit.Url);
             Assert.IsNotNull(commit.CommitProperties);
             var commitProperties = commit.CommitProperties;
             Assert.AreEqual("Added FileName field to DimTarget", commitProperties.Message);
@@ -70,7 +70,7 @@ namespace CodeChurnLoader.Tests.IntegrationTests
             var commit = JsonConvert.DeserializeObject<CodeChurnLoader.Data.Github.Commit>(json);
             Assert.IsNotNull(commit);
             Assert.AreEqual("21bbb99934a36899c3c65347ea886569823c9a54", commit.Sha);
-            Assert.AreEqual("https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/21bbb99934a36899c3c65347ea886569823c9a54", commit.Url);
+            Assert.AreEqual("https://github.com/StanBPublic/CodeMetricsLoader/commit/21bbb99934a36899c3c65347ea886569823c9a54", commit.Url);
             Assert.IsNotNull(commit.CommitProperties);
             var commitProperties = commit.CommitProperties;
             Assert.AreEqual("Added FileName field to DimTarget", commitProperties.Message);
@@ -87,7 +87,7 @@ namespace CodeChurnLoader.Tests.IntegrationTests
             Assert.IsNull(yetAnotherCommitter.Name);
 
             Assert.IsNotNull(commit.Stats);            
-            Assert.AreEqual(90, commit.Stats.Total);
+            Assert.AreEqual(90, commit.Stats.Changes);
             Assert.AreEqual(49, commit.Stats.Additions);
             Assert.AreEqual(41, commit.Stats.Deletions);            
             Assert.AreEqual(2, commit.Files.Count);

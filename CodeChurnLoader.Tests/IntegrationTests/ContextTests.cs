@@ -1,9 +1,11 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using System.Linq;
 
 using NUnit.Framework;
 
 using CodeChurnLoader.Data;
+
 
 
 namespace CodeChurnLoader.Tests.IntegrationTests
@@ -42,8 +44,9 @@ namespace CodeChurnLoader.Tests.IntegrationTests
             var commit = new DimCommit
             {
                 Sha = "9c4800fdeb47aa8f990105fd894ab1f125efc51e",
-                Url = "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/9c4800fdeb47aa8f990105fd894ab1f125efc51e"
-
+                Url = "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/9c4800fdeb47aa8f990105fd894ab1f125efc51e",
+                Committer = "JoeDoe",
+                Date = DateTime.Now,
             };
             repo.Commits.Add(commit);
             _context.Repos.Add(repo);
@@ -54,9 +57,8 @@ namespace CodeChurnLoader.Tests.IntegrationTests
                 Commit = commit,
                 Date = date,
                 LinesAdded = 10,
-                LinesDeleted = 2,
-                LinesModified = 1,
-                TotalChurn = 13
+                LinesDeleted = 2,                
+                TotalChurn = 12
             };               
             _context.Churn.Add(churn);
             _context.SaveChanges();            

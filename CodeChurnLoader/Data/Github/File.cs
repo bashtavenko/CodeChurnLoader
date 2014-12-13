@@ -12,7 +12,7 @@ namespace CodeChurnLoader.Data.Github
 
         [JsonProperty("status")]
         public string Status { get; set; }
-
+        
         [JsonProperty("additions")]
         public int Additions { get; set; }
         

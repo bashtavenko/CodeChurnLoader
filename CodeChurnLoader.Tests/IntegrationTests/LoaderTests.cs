@@ -1,11 +1,10 @@
-﻿using CodeChurnLoader.Data;
-using NUnit.Framework;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using NUnit.Framework;
+
+using CodeChurnLoader.Data;
 
 namespace CodeChurnLoader.Tests.IntegrationTests
 {
@@ -24,9 +23,9 @@ namespace CodeChurnLoader.Tests.IntegrationTests
                 {
                     Sha = "9c4800fdeb47aa8f990105fd894ab1f125efc51e",
                     Url = "https://api.github.com/repos/StanBPublic/CodeMetricsLoader/commits/9c4800fdeb47aa8f990105fd894ab1f125efc51e",
-                    NumberOfAdditions = 10,
-                    NumberOfChanges = 2,
-                    NumberOfDeletions = 3,      
+                    Additions = 10,                    
+                    Deletions = 3, 
+                    Changes = 13,
                     Message = "Test",
                     Committer = "Joe Doe",
                     CommitterAvatarUrl = "https://avatars.githubusercontent.com/u/1820912?v=3",
@@ -38,18 +37,18 @@ namespace CodeChurnLoader.Tests.IntegrationTests
                             Sha = "000000fdeb4000000000000d8000000005efc51e",
                             Url = "https://api.github.com/repos/file1",
                             FileName = "file1.cs",
-                            NumberOfAdditions = 6,
-                            NumberOfChanges = 1,
-                            NumberOfDeletions = 3,                            
+                            Additions = 6,
+                            Changes = 9,
+                            Deletions = 3,                            
                         },
                         new File
                         {
                             Sha = "111111fdeb4111111111111d8111111115efc51e",
                             Url = "https://api.github.com/repos/file2",
                             FileName = "file2.cs",
-                            NumberOfAdditions = 4,
-                            NumberOfChanges = 1,
-                            NumberOfDeletions = 0
+                            Additions = 4,
+                            Changes = 4,
+                            Deletions = 0
                         },
                     }
                 }

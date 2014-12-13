@@ -5,8 +5,8 @@
         public string Sha { get; set; }
         public string FileName { get; set; }
         public string Url { get; set; }
-        public int NumberOfAdditions { get; set; }
-        public int NumberOfDeletions { get; set; }
-        public int NumberOfChanges { get; set; }
+        public int Additions { get; set; }
+        public int Deletions { get; set; }
+        public int Changes { get; set; }
     }
 }
