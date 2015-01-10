@@ -1,0 +1,2221 @@
+﻿    {
+        "pagelen": 2,
+        "values": [
+            {
+                "hash": "0e9a2e544e360364556bcf2288566af271784fce",
+                "links": {
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/0e9a2e544e360364556bcf2288566af271784fce"
+                    },
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/0e9a2e544e360364556bcf2288566af271784fce"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/0e9a2e544e360364556bcf2288566af271784fce"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/0e9a2e544e360364556bcf2288566af271784fce/approve"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/0e9a2e544e360364556bcf2288566af271784fce/comments"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "ea37b0019adb608ab486bd26908e9a363456e555",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/ea37b0019adb608ab486bd26908e9a363456e555"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/ea37b0019adb608ab486bd26908e9a363456e555"
+                            }
+                        }
+                    },
+                    {
+                        "hash": "edb2214d310f8880464a5b802a04bbc366221855",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/edb2214d310f8880464a5b802a04bbc366221855"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/edb2214d310f8880464a5b802a04bbc366221855"
+                            }
+                        }
+                    }
+                ],
+                "date": "2015-01-03T16:11:19+00:00",
+                "message": "Cleanup\n"
+            },
+            {
+                "hash": "ea37b0019adb608ab486bd26908e9a363456e555",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/ea37b0019adb608ab486bd26908e9a363456e555"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/ea37b0019adb608ab486bd26908e9a363456e555/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/ea37b0019adb608ab486bd26908e9a363456e555"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/ea37b0019adb608ab486bd26908e9a363456e555"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/ea37b0019adb608ab486bd26908e9a363456e555"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/ea37b0019adb608ab486bd26908e9a363456e555/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c"
+                            }
+                        }
+                    }
+                ],
+                "date": "2015-01-03T16:08:56+00:00",
+                "message": "Added TopX stats\n"
+            },
+            {
+                "hash": "edb2214d310f8880464a5b802a04bbc366221855",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/edb2214d310f8880464a5b802a04bbc366221855"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/edb2214d310f8880464a5b802a04bbc366221855/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/edb2214d310f8880464a5b802a04bbc366221855"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/edb2214d310f8880464a5b802a04bbc366221855"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/edb2214d310f8880464a5b802a04bbc366221855"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/edb2214d310f8880464a5b802a04bbc366221855/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c"
+                            }
+                        }
+                    }
+                ],
+                "date": "2015-01-03T16:02:23+00:00",
+                "message": "Added TopX stats\n"
+            },
+            {
+                "hash": "fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/fe6f5a0ecdbae505e53d1ca0e44fe98a56e8086c/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "aec313a2bfda169922dc409acff15bb17b2172f7",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/aec313a2bfda169922dc409acff15bb17b2172f7"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/aec313a2bfda169922dc409acff15bb17b2172f7"
+                            }
+                        }
+                    }
+                ],
+                "date": "2015-01-02T22:59:20+00:00",
+                "message": "$parent bug with selectedDate fixed\n"
+            },
+            {
+                "hash": "aec313a2bfda169922dc409acff15bb17b2172f7",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/aec313a2bfda169922dc409acff15bb17b2172f7"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/aec313a2bfda169922dc409acff15bb17b2172f7/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/aec313a2bfda169922dc409acff15bb17b2172f7"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/aec313a2bfda169922dc409acff15bb17b2172f7"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/aec313a2bfda169922dc409acff15bb17b2172f7"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/aec313a2bfda169922dc409acff15bb17b2172f7/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "8bc7c3a6621864642ae39af5185d61516b4301ef",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/8bc7c3a6621864642ae39af5185d61516b4301ef"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/8bc7c3a6621864642ae39af5185d61516b4301ef"
+                            }
+                        }
+                    }
+                ],
+                "date": "2015-01-02T16:14:32+00:00",
+                "message": "Refactored churn pages.\n"
+            },
+            {
+                "hash": "8bc7c3a6621864642ae39af5185d61516b4301ef",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/8bc7c3a6621864642ae39af5185d61516b4301ef"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/8bc7c3a6621864642ae39af5185d61516b4301ef/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/8bc7c3a6621864642ae39af5185d61516b4301ef"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/8bc7c3a6621864642ae39af5185d61516b4301ef"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/8bc7c3a6621864642ae39af5185d61516b4301ef"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/8bc7c3a6621864642ae39af5185d61516b4301ef/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "a59d69d47f434967941a8e07ac2958875a01ad87",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a59d69d47f434967941a8e07ac2958875a01ad87"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/a59d69d47f434967941a8e07ac2958875a01ad87"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-30T16:35:07+00:00",
+                "message": "Done\n"
+            },
+            {
+                "hash": "a59d69d47f434967941a8e07ac2958875a01ad87",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a59d69d47f434967941a8e07ac2958875a01ad87"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a59d69d47f434967941a8e07ac2958875a01ad87/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/a59d69d47f434967941a8e07ac2958875a01ad87"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/a59d69d47f434967941a8e07ac2958875a01ad87"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/a59d69d47f434967941a8e07ac2958875a01ad87"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a59d69d47f434967941a8e07ac2958875a01ad87/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "99313b73a4e436e9fbad6502cc5e46fbe0124faf",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/99313b73a4e436e9fbad6502cc5e46fbe0124faf"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/99313b73a4e436e9fbad6502cc5e46fbe0124faf"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-30T14:03:42+00:00",
+                "message": "Members work\n"
+            },
+            {
+                "hash": "99313b73a4e436e9fbad6502cc5e46fbe0124faf",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/99313b73a4e436e9fbad6502cc5e46fbe0124faf"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/99313b73a4e436e9fbad6502cc5e46fbe0124faf/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/99313b73a4e436e9fbad6502cc5e46fbe0124faf"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/99313b73a4e436e9fbad6502cc5e46fbe0124faf"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/99313b73a4e436e9fbad6502cc5e46fbe0124faf"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/99313b73a4e436e9fbad6502cc5e46fbe0124faf/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "f35661de300fe4e302ea0f57510db445b826924e",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/f35661de300fe4e302ea0f57510db445b826924e"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/f35661de300fe4e302ea0f57510db445b826924e"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-30T13:44:30+00:00",
+                "message": "Types work\n"
+            },
+            {
+                "hash": "f35661de300fe4e302ea0f57510db445b826924e",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/f35661de300fe4e302ea0f57510db445b826924e"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/f35661de300fe4e302ea0f57510db445b826924e/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/f35661de300fe4e302ea0f57510db445b826924e"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/f35661de300fe4e302ea0f57510db445b826924e"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/f35661de300fe4e302ea0f57510db445b826924e"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/f35661de300fe4e302ea0f57510db445b826924e/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "c9e41eb5283f68ac477f3962912ab095677e78e7",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/c9e41eb5283f68ac477f3962912ab095677e78e7"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/c9e41eb5283f68ac477f3962912ab095677e78e7"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-29T22:53:55+00:00",
+                "message": "Tag->Module->Namespace works\n"
+            },
+            {
+                "hash": "c9e41eb5283f68ac477f3962912ab095677e78e7",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/c9e41eb5283f68ac477f3962912ab095677e78e7"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/c9e41eb5283f68ac477f3962912ab095677e78e7/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/c9e41eb5283f68ac477f3962912ab095677e78e7"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/c9e41eb5283f68ac477f3962912ab095677e78e7"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/c9e41eb5283f68ac477f3962912ab095677e78e7"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/c9e41eb5283f68ac477f3962912ab095677e78e7/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "72cc3f7c0a2c84217bbd5c45ef785c49d1d54563",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/72cc3f7c0a2c84217bbd5c45ef785c49d1d54563"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/72cc3f7c0a2c84217bbd5c45ef785c49d1d54563"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-29T15:52:29+00:00",
+                "message": "Namespaces work\n"
+            },
+            {
+                "hash": "72cc3f7c0a2c84217bbd5c45ef785c49d1d54563",
+                "links": {
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/72cc3f7c0a2c84217bbd5c45ef785c49d1d54563"
+                    },
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/72cc3f7c0a2c84217bbd5c45ef785c49d1d54563"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/72cc3f7c0a2c84217bbd5c45ef785c49d1d54563"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/72cc3f7c0a2c84217bbd5c45ef785c49d1d54563/approve"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/72cc3f7c0a2c84217bbd5c45ef785c49d1d54563/comments"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "795ec428e85748398414dc4722aa471564ea5b61",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/795ec428e85748398414dc4722aa471564ea5b61"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/795ec428e85748398414dc4722aa471564ea5b61"
+                            }
+                        }
+                    },
+                    {
+                        "hash": "247f52a4d1abeed7d5a44e7e58c866a2dadc0758",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/247f52a4d1abeed7d5a44e7e58c866a2dadc0758"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/247f52a4d1abeed7d5a44e7e58c866a2dadc0758"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-27T22:40:39+00:00",
+                "message": "Added module, major refactoring\n"
+            },
+            {
+                "hash": "247f52a4d1abeed7d5a44e7e58c866a2dadc0758",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/247f52a4d1abeed7d5a44e7e58c866a2dadc0758"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/247f52a4d1abeed7d5a44e7e58c866a2dadc0758/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/247f52a4d1abeed7d5a44e7e58c866a2dadc0758"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/247f52a4d1abeed7d5a44e7e58c866a2dadc0758"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/247f52a4d1abeed7d5a44e7e58c866a2dadc0758"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/247f52a4d1abeed7d5a44e7e58c866a2dadc0758/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "d6bc11b1adf8cbdaf7151cf10e333ccab431ee20",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/d6bc11b1adf8cbdaf7151cf10e333ccab431ee20"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/d6bc11b1adf8cbdaf7151cf10e333ccab431ee20"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-27T22:36:31+00:00",
+                "message": "Modules work\n"
+            },
+            {
+                "hash": "d6bc11b1adf8cbdaf7151cf10e333ccab431ee20",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/d6bc11b1adf8cbdaf7151cf10e333ccab431ee20"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/d6bc11b1adf8cbdaf7151cf10e333ccab431ee20/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/d6bc11b1adf8cbdaf7151cf10e333ccab431ee20"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/d6bc11b1adf8cbdaf7151cf10e333ccab431ee20"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/d6bc11b1adf8cbdaf7151cf10e333ccab431ee20"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/d6bc11b1adf8cbdaf7151cf10e333ccab431ee20/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "ab3b870b179dc58d9710c93132ec4307667f508d",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/ab3b870b179dc58d9710c93132ec4307667f508d"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/ab3b870b179dc58d9710c93132ec4307667f508d"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-27T18:19:13+00:00",
+                "message": "Missing file\n"
+            },
+            {
+                "hash": "ab3b870b179dc58d9710c93132ec4307667f508d",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/ab3b870b179dc58d9710c93132ec4307667f508d"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/ab3b870b179dc58d9710c93132ec4307667f508d/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/ab3b870b179dc58d9710c93132ec4307667f508d"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/ab3b870b179dc58d9710c93132ec4307667f508d"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/ab3b870b179dc58d9710c93132ec4307667f508d"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/ab3b870b179dc58d9710c93132ec4307667f508d/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "edbfc6400930b517e241e54a5c882e8c6d624659",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/edbfc6400930b517e241e54a5c882e8c6d624659"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/edbfc6400930b517e241e54a5c882e8c6d624659"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-27T18:18:49+00:00",
+                "message": "Ready to add modules\n"
+            },
+            {
+                "hash": "edbfc6400930b517e241e54a5c882e8c6d624659",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/edbfc6400930b517e241e54a5c882e8c6d624659"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/edbfc6400930b517e241e54a5c882e8c6d624659/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/edbfc6400930b517e241e54a5c882e8c6d624659"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/edbfc6400930b517e241e54a5c882e8c6d624659"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/edbfc6400930b517e241e54a5c882e8c6d624659"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/edbfc6400930b517e241e54a5c882e8c6d624659/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "a6eb9feefe8c09d05fa0d20d0aefc595a169ba74",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a6eb9feefe8c09d05fa0d20d0aefc595a169ba74"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/a6eb9feefe8c09d05fa0d20d0aefc595a169ba74"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-27T17:03:55+00:00",
+                "message": "Nice refactoring of service\n"
+            },
+            {
+                "hash": "a6eb9feefe8c09d05fa0d20d0aefc595a169ba74",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a6eb9feefe8c09d05fa0d20d0aefc595a169ba74"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a6eb9feefe8c09d05fa0d20d0aefc595a169ba74/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/a6eb9feefe8c09d05fa0d20d0aefc595a169ba74"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/a6eb9feefe8c09d05fa0d20d0aefc595a169ba74"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/a6eb9feefe8c09d05fa0d20d0aefc595a169ba74"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a6eb9feefe8c09d05fa0d20d0aefc595a169ba74/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "9aac338aab6b5b6c649d88f64db8a45a90a6840a",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/9aac338aab6b5b6c649d88f64db8a45a90a6840a"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/9aac338aab6b5b6c649d88f64db8a45a90a6840a"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-27T16:43:56+00:00",
+                "message": "Service added, folder refactor\n"
+            },
+            {
+                "hash": "9aac338aab6b5b6c649d88f64db8a45a90a6840a",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/9aac338aab6b5b6c649d88f64db8a45a90a6840a"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/9aac338aab6b5b6c649d88f64db8a45a90a6840a/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/9aac338aab6b5b6c649d88f64db8a45a90a6840a"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/9aac338aab6b5b6c649d88f64db8a45a90a6840a"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/9aac338aab6b5b6c649d88f64db8a45a90a6840a"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/9aac338aab6b5b6c649d88f64db8a45a90a6840a/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "1758ebac26507db5778027302c726add198613c9",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/1758ebac26507db5778027302c726add198613c9"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/1758ebac26507db5778027302c726add198613c9"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-26T22:42:09+00:00",
+                "message": "Namespace repo methods added\n"
+            },
+            {
+                "hash": "1758ebac26507db5778027302c726add198613c9",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/1758ebac26507db5778027302c726add198613c9"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/1758ebac26507db5778027302c726add198613c9/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/1758ebac26507db5778027302c726add198613c9"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/1758ebac26507db5778027302c726add198613c9"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/1758ebac26507db5778027302c726add198613c9"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/1758ebac26507db5778027302c726add198613c9/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "795ec428e85748398414dc4722aa471564ea5b61",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/795ec428e85748398414dc4722aa471564ea5b61"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/795ec428e85748398414dc4722aa471564ea5b61"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-26T18:17:39+00:00",
+                "message": "Major refactoring with child controllers and events. Nice.\n"
+            },
+            {
+                "hash": "795ec428e85748398414dc4722aa471564ea5b61",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/795ec428e85748398414dc4722aa471564ea5b61"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/795ec428e85748398414dc4722aa471564ea5b61/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/795ec428e85748398414dc4722aa471564ea5b61"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/795ec428e85748398414dc4722aa471564ea5b61"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/795ec428e85748398414dc4722aa471564ea5b61"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/795ec428e85748398414dc4722aa471564ea5b61/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "e5d5c6e906d6633fdaf1aaeeeee65ca0b873da13",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/e5d5c6e906d6633fdaf1aaeeeee65ca0b873da13"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/e5d5c6e906d6633fdaf1aaeeeee65ca0b873da13"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-25T21:43:46+00:00",
+                "message": "Added metrics module for tag / module.\n"
+            },
+            {
+                "hash": "e5d5c6e906d6633fdaf1aaeeeee65ca0b873da13",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/e5d5c6e906d6633fdaf1aaeeeee65ca0b873da13"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/e5d5c6e906d6633fdaf1aaeeeee65ca0b873da13/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/e5d5c6e906d6633fdaf1aaeeeee65ca0b873da13"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/e5d5c6e906d6633fdaf1aaeeeee65ca0b873da13"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/e5d5c6e906d6633fdaf1aaeeeee65ca0b873da13"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/e5d5c6e906d6633fdaf1aaeeeee65ca0b873da13/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "9422a72dad8cfd83ae169eded27a0ca4ea9d50d5",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/9422a72dad8cfd83ae169eded27a0ca4ea9d50d5"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/9422a72dad8cfd83ae169eded27a0ca4ea9d50d5"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-24T17:15:12+00:00",
+                "message": "Added top 5 files, plus other small changes on churn view.\n"
+            },
+            {
+                "hash": "9422a72dad8cfd83ae169eded27a0ca4ea9d50d5",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/9422a72dad8cfd83ae169eded27a0ca4ea9d50d5"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/9422a72dad8cfd83ae169eded27a0ca4ea9d50d5/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/9422a72dad8cfd83ae169eded27a0ca4ea9d50d5"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/9422a72dad8cfd83ae169eded27a0ca4ea9d50d5"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/9422a72dad8cfd83ae169eded27a0ca4ea9d50d5"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/9422a72dad8cfd83ae169eded27a0ca4ea9d50d5/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "800820622665e3e442b1f1ad0f63a6c6066f78bc",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/800820622665e3e442b1f1ad0f63a6c6066f78bc"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/800820622665e3e442b1f1ad0f63a6c6066f78bc"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-20T19:46:33+00:00",
+                "message": "Added Angular UI, datepickers, form validation, unit tests. Cleaned up\nlayout. Added publishing profile.\n"
+            },
+            {
+                "hash": "800820622665e3e442b1f1ad0f63a6c6066f78bc",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/800820622665e3e442b1f1ad0f63a6c6066f78bc"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/800820622665e3e442b1f1ad0f63a6c6066f78bc/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/800820622665e3e442b1f1ad0f63a6c6066f78bc"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/800820622665e3e442b1f1ad0f63a6c6066f78bc"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/800820622665e3e442b1f1ad0f63a6c6066f78bc"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/800820622665e3e442b1f1ad0f63a6c6066f78bc/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "3590e73fd34827870ba27f80e82ae5ec26ae8346",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/3590e73fd34827870ba27f80e82ae5ec26ae8346"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/3590e73fd34827870ba27f80e82ae5ec26ae8346"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-18T23:58:37+00:00",
+                "message": "Files added.\n"
+            },
+            {
+                "hash": "3590e73fd34827870ba27f80e82ae5ec26ae8346",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/3590e73fd34827870ba27f80e82ae5ec26ae8346"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/3590e73fd34827870ba27f80e82ae5ec26ae8346/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/3590e73fd34827870ba27f80e82ae5ec26ae8346"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/3590e73fd34827870ba27f80e82ae5ec26ae8346"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/3590e73fd34827870ba27f80e82ae5ec26ae8346"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/3590e73fd34827870ba27f80e82ae5ec26ae8346/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "2ba1680340a6cb928ae0576204fbafbd8dff9425",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/2ba1680340a6cb928ae0576204fbafbd8dff9425"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/2ba1680340a6cb928ae0576204fbafbd8dff9425"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-14T00:39:14+00:00",
+                "message": "Unit test fixed\n"
+            },
+            {
+                "hash": "2ba1680340a6cb928ae0576204fbafbd8dff9425",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/2ba1680340a6cb928ae0576204fbafbd8dff9425"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/2ba1680340a6cb928ae0576204fbafbd8dff9425/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/2ba1680340a6cb928ae0576204fbafbd8dff9425"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/2ba1680340a6cb928ae0576204fbafbd8dff9425"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/2ba1680340a6cb928ae0576204fbafbd8dff9425"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/2ba1680340a6cb928ae0576204fbafbd8dff9425/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "e02b697db878337996dd1f3bbff33a7a557b52d9",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/e02b697db878337996dd1f3bbff33a7a557b52d9"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/e02b697db878337996dd1f3bbff33a7a557b52d9"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-14T00:18:04+00:00",
+                "message": "missing files\n"
+            },
+            {
+                "hash": "e02b697db878337996dd1f3bbff33a7a557b52d9",
+                "links": {
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/e02b697db878337996dd1f3bbff33a7a557b52d9"
+                    },
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/e02b697db878337996dd1f3bbff33a7a557b52d9"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/e02b697db878337996dd1f3bbff33a7a557b52d9"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/e02b697db878337996dd1f3bbff33a7a557b52d9/approve"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/e02b697db878337996dd1f3bbff33a7a557b52d9/comments"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "cec4edb4815cf6beb940908aefae1465abbd961b",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/cec4edb4815cf6beb940908aefae1465abbd961b"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/cec4edb4815cf6beb940908aefae1465abbd961b"
+                            }
+                        }
+                    },
+                    {
+                        "hash": "d4fea2704f04601441375d1fcf1f49c6c200baa1",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/d4fea2704f04601441375d1fcf1f49c6c200baa1"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/d4fea2704f04601441375d1fcf1f49c6c200baa1"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-14T00:13:35+00:00",
+                "message": "Added Wijmo and Angular\n"
+            },
+            {
+                "hash": "cec4edb4815cf6beb940908aefae1465abbd961b",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/cec4edb4815cf6beb940908aefae1465abbd961b"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/cec4edb4815cf6beb940908aefae1465abbd961b/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/cec4edb4815cf6beb940908aefae1465abbd961b"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/cec4edb4815cf6beb940908aefae1465abbd961b"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/cec4edb4815cf6beb940908aefae1465abbd961b"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/cec4edb4815cf6beb940908aefae1465abbd961b/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "c0d2193cb073849acd447c8beb198022eaae6c84",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/c0d2193cb073849acd447c8beb198022eaae6c84"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/c0d2193cb073849acd447c8beb198022eaae6c84"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-14T00:01:37+00:00",
+                "message": "Initial commit\n"
+            },
+            {
+                "hash": "d4fea2704f04601441375d1fcf1f49c6c200baa1",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/d4fea2704f04601441375d1fcf1f49c6c200baa1"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/d4fea2704f04601441375d1fcf1f49c6c200baa1/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/d4fea2704f04601441375d1fcf1f49c6c200baa1"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/d4fea2704f04601441375d1fcf1f49c6c200baa1"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/d4fea2704f04601441375d1fcf1f49c6c200baa1"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/d4fea2704f04601441375d1fcf1f49c6c200baa1/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "a9abd48d314408bc61fa787f55733d397b325e90",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a9abd48d314408bc61fa787f55733d397b325e90"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/a9abd48d314408bc61fa787f55733d397b325e90"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-13T23:58:07+00:00",
+                "message": "Code churn with Wijmo and angular\n"
+            },
+            {
+                "hash": "a9abd48d314408bc61fa787f55733d397b325e90",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a9abd48d314408bc61fa787f55733d397b325e90"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a9abd48d314408bc61fa787f55733d397b325e90/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/a9abd48d314408bc61fa787f55733d397b325e90"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/a9abd48d314408bc61fa787f55733d397b325e90"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/a9abd48d314408bc61fa787f55733d397b325e90"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/a9abd48d314408bc61fa787f55733d397b325e90/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "705847c10a7fc9b28606657be5db0f9d5fc795ac",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/705847c10a7fc9b28606657be5db0f9d5fc795ac"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/705847c10a7fc9b28606657be5db0f9d5fc795ac"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-02T15:38:24+00:00",
+                "message": "Can get data\n"
+            },
+            {
+                "hash": "705847c10a7fc9b28606657be5db0f9d5fc795ac",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/705847c10a7fc9b28606657be5db0f9d5fc795ac"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/705847c10a7fc9b28606657be5db0f9d5fc795ac/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/705847c10a7fc9b28606657be5db0f9d5fc795ac"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/705847c10a7fc9b28606657be5db0f9d5fc795ac"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/705847c10a7fc9b28606657be5db0f9d5fc795ac"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/705847c10a7fc9b28606657be5db0f9d5fc795ac/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "305ed378f3c4b8874c0a3753343a20cbb30307d6",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/305ed378f3c4b8874c0a3753343a20cbb30307d6"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/305ed378f3c4b8874c0a3753343a20cbb30307d6"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-12-01T18:40:53+00:00",
+                "message": "Form is done\n"
+            },
+            {
+                "hash": "305ed378f3c4b8874c0a3753343a20cbb30307d6",
+                "links": {
+                    "self": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/305ed378f3c4b8874c0a3753343a20cbb30307d6"
+                    },
+                    "comments": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/305ed378f3c4b8874c0a3753343a20cbb30307d6/comments"
+                    },
+                    "patch": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/patch/305ed378f3c4b8874c0a3753343a20cbb30307d6"
+                    },
+                    "html": {
+                        "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/305ed378f3c4b8874c0a3753343a20cbb30307d6"
+                    },
+                    "diff": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/diff/305ed378f3c4b8874c0a3753343a20cbb30307d6"
+                    },
+                    "approve": {
+                        "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/305ed378f3c4b8874c0a3753343a20cbb30307d6/approve"
+                    }
+                },
+                "repository": {
+                    "links": {
+                        "self": {
+                            "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal"
+                        },
+                        "html": {
+                            "href": "https://bitbucket.org/stanbpublic/codequalityportal"
+                        },
+                        "avatar": {
+                            "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/a90e56509fc9/img/language-avatars/c_sharp_16.png"
+                        }
+                    },
+                    "uuid": "{13c6f68e-d70a-4b73-9d5d-a96750086f7b}",
+                    "full_name": "stanbpublic/codequalityportal",
+                    "name": "CodeQualityPortal"
+                },
+                "author": {
+                    "raw": "Stan <StanBPublic@live.com>",
+                    "user": {
+                        "username": "stanbpublic",
+                        "display_name": "Stan B",
+                        "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic"
+                            },
+                            "avatar": {
+                                "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                            }
+                        }
+                    }
+                },
+                "parents": [
+                    {
+                        "hash": "9501c18d2a9bb3b88779c6fd7a91b806c923c225",
+                        "links": {
+                            "self": {
+                                "href": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commit/9501c18d2a9bb3b88779c6fd7a91b806c923c225"
+                            },
+                            "html": {
+                                "href": "https://bitbucket.org/stanbpublic/codequalityportal/commits/9501c18d2a9bb3b88779c6fd7a91b806c923c225"
+                            }
+                        }
+                    }
+                ],
+                "date": "2014-11-29T18:41:26+00:00",
+                "message": "repo bootsrap works\n"
+            }
+        ],
+        "page": 1,
+        "next": "https://bitbucket.org/api/2.0/repositories/stanbpublic/codequalityportal/commits?branchortag=master&page=2"
+    }

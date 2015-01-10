@@ -2,7 +2,7 @@ Code Churn Loader
 =================
 
 This is a simple utitlity to pull down number of lines added, changed, deleted (aka code churn) from public or private repos
-hosted on Github.
+hosted on Github or Bitbucket.
 
 Code churn is stored in database where it can be reported.
 
@@ -42,7 +42,12 @@ The database is fairly straightforward
   <configSections>        
     <section name="RepoCredentials" type="CodeChurnLoader.RepoCredentials, CodeChurnLoader" />
   </configSections>  
-  <RepoCredentials Owner="Githubowner" UserName="user" Password="secret" />
+  <LoaderConfiguration>
+        <Providers>
+            <add Type="Github" Owner="stanbpublic" UserName="secret" Password="secret"></add>
+            <add Type="Bitbucket" Owner="stanbpublic" UserName="" Password=""></add>
+        </Providers>
+  </LoaderConfiguration>
   <connectionStrings>
     <add name="CodeChurnLoaderWarehouse" 
         providerName="System.Data.SqlClient"
@@ -54,6 +59,7 @@ The database is fairly straightforward
 User name and password are only required for private repos.
 
 #Command line parameters
+--p Provider (Github | Bitbucket)
 --r Repository name
 --d Date for which to collect churn(from midnight to midnight)
 

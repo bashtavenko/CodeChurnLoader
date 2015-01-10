@@ -7,6 +7,9 @@ namespace CodeChurnLoader
 {
     public class LoaderConfiguration
     {
+        [Option('p', "provider", Required = true, HelpText = "Provider type (Github or Bitbucket")]
+        public ProviderType ProviderType { get; set; }
+        
         [Option('r', "repo", Required = true, HelpText = "Name of the repository")]
         public string Repo { get; set; }
 

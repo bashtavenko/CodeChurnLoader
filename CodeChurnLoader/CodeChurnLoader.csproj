@@ -64,6 +64,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoMapperConfig.cs" />
+    <Compile Include="Data\Bitbucket\BitbucketService.cs" />
+    <Compile Include="Data\Bitbucket\Href.cs" />
+    <Compile Include="Data\Bitbucket\Author.cs" />
+    <Compile Include="Data\Bitbucket\Commit.cs" />
+    <Compile Include="Data\Bitbucket\DiffParser.cs" />
+    <Compile Include="Data\Bitbucket\File.cs" />
+    <Compile Include="Data\Bitbucket\BitbucketProvider.cs" />
+    <Compile Include="Data\Bitbucket\IBitbucketService.cs" />
+    <Compile Include="Data\Bitbucket\Links.cs" />
+    <Compile Include="Data\Bitbucket\User.cs" />
     <Compile Include="Data\Commit.cs" />
     <Compile Include="Data\DimCommit.cs" />
     <Compile Include="Data\DimDate.cs" />
@@ -71,10 +81,13 @@
     <Compile Include="Data\DimRepo.cs" />
     <Compile Include="Data\FactCodeChurn.cs" />
     <Compile Include="Data\File.cs" />
+    <Compile Include="Data\Bitbucket\CommitHeader.cs" />
     <Compile Include="Data\Github\Committer.cs" />
     <Compile Include="Data\Github\CommitProperties.cs" />
     <Compile Include="Data\Github\GithubProvider.cs" />
     <Compile Include="Data\Github\Commit.cs" />
+    <Compile Include="Data\Github\GithubService.cs" />
+    <Compile Include="Data\Github\IGithubService.cs" />
     <Compile Include="Data\Github\Stats.cs" />
     <Compile Include="Data\Github\File.cs" />
     <Compile Include="Data\IGitProvider.cs" />
@@ -84,7 +97,10 @@
     <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepoCredentials.cs" />
+    <Compile Include="ProviderConfigurationElement.cs" />
+    <Compile Include="ProvidersCollection.cs" />
+    <Compile Include="LoaderConfigurationSection.cs" />
+    <Compile Include="ProviderType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

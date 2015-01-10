@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Data.Entity.Validation;
 
 using AutoMapper;
 
 using CodeChurnLoader.Data;
+using System.Text;
+
 
 namespace CodeChurnLoader
 {
@@ -42,9 +45,9 @@ namespace CodeChurnLoader
         /// <param name="commits">Commit list</param>
         public void SaveCommits(DateTime runDate, string repoName, List<Commit> commits)
         {
-            if (HaveDataForThisDate(runDate))
+            if (HaveDataForThisDate(repoName, runDate))
             {
-                _logger.Log("Already have data for this date range.");
+                _logger.Log("Already have data for this repo and date.");
                 return;
             }
 
@@ -77,7 +80,25 @@ namespace CodeChurnLoader
                     _context.Churn.Add(churn);
                 }
 
-                _context.SaveChanges();            
+                try
+                {
+                    _context.SaveChanges();
+                }
+                catch (DbEntityValidationException ex)
+                {
+                    var sb = new StringBuilder("Failed to save\n");
+                    foreach (var entity in ex.EntityValidationErrors)
+                    {
+                        sb.AppendLine(string.Format("Entity: {0}", entity.Entry.Entity));
+                        foreach (var error in entity.ValidationErrors)
+                        {
+                            sb.AppendLine(string.Format("Property: {0}", error.PropertyName));
+                            sb.AppendLine(string.Format("Error: {0}", error.ErrorMessage));
+                        }
+                        sb.AppendLine();
+                    }
+                    throw new ApplicationException(sb.ToString(), ex);
+                }
             }
             _logger.Log("Done.");
         }
@@ -108,9 +129,9 @@ namespace CodeChurnLoader
             }
         }
 
-        private bool HaveDataForThisDate (DateTime date)
+        private bool HaveDataForThisDate (string repoName, DateTime date)
         {
-            return _context.Churn.Where(c => c.Date.Date == date.Date).Any();
+            return _context.Churn.Where(c => c.Date.Date == date.Date && c.Commit.Repo.Name.Equals(repoName, StringComparison.InvariantCultureIgnoreCase)).Any();
         }
     }
 }

@@ -1,0 +1,16 @@
+﻿diff --git a/CodeQualityPortal/ViewModels/FileChurnSummary.cs b/CodeQualityPortal/ViewModels/FileChurnSummary.cs
+new file mode 100644
+index 0000000..5094e11
+--- /dev/null
++++ b/CodeQualityPortal/ViewModels/FileChurnSummary.cs
+@@ -0,0 +1,9 @@
++﻿using System;
++
++namespace CodeQualityPortal.ViewModels
++{
++    public class FileChurnSummary : FileCodeChurn
++    {
++        public DateTime Date { get; set; }
++    }
++}
+\ No newline at end of file

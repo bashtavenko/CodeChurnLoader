@@ -1,0 +1,517 @@
+﻿From ea37b0019adb608ab486bd26908e9a363456e555 Mon Sep 17 00:00:00 2001
+From: Stan <StanBPublic@live.com>
+Date: Sat, 3 Jan 2015 11:02:23 -0500
+Subject: [PATCH] Added TopX stats
+
+---
+ .../Data/ChurnRepositoryTests.cs                   |  26 +++--
+ .../Data/MetricsRepositoryTests.cs                 |   9 +-
+ CodeQualityPortal/App_Start/AutoMapperConfig.cs    |  13 +++
+ CodeQualityPortal/CodeQualityPortal.csproj         |   3 +
+ CodeQualityPortal/Common/HtmlHelpers.cs            |  24 ++++-
+ CodeQualityPortal/Controllers/HomeController.cs    |  12 ++-
+ CodeQualityPortal/Data/CodeChurnRepository.cs      |  23 ++++-
+ CodeQualityPortal/Data/ICodeChurnRepository.cs     |   1 +
+ CodeQualityPortal/Data/IMetricsRepository.cs       |   3 +-
+ CodeQualityPortal/Data/MetricsRepository.cs        |  15 +++
+ CodeQualityPortal/ViewModels/FileChurnSummary.cs   |   9 ++
+ CodeQualityPortal/ViewModels/MemberSummary.cs      |  10 ++
+ CodeQualityPortal/ViewModels/TopWorst.cs           |  10 ++
+ CodeQualityPortal/Views/Home/Index.cshtml          | 106 ++++++++++++---------
+ 14 files changed, 202 insertions(+), 62 deletions(-)
+ create mode 100644 CodeQualityPortal/ViewModels/FileChurnSummary.cs
+ create mode 100644 CodeQualityPortal/ViewModels/MemberSummary.cs
+ create mode 100644 CodeQualityPortal/ViewModels/TopWorst.cs
+
+diff --git a/CodeQualityPortal.IntegrationTests/Data/ChurnRepositoryTests.cs b/CodeQualityPortal.IntegrationTests/Data/ChurnRepositoryTests.cs
+index 73585fd..16c1e3c 100644
+--- a/CodeQualityPortal.IntegrationTests/Data/ChurnRepositoryTests.cs
++++ b/CodeQualityPortal.IntegrationTests/Data/ChurnRepositoryTests.cs
+@@ -15,18 +15,19 @@ namespace CodeQualityPortal.IntegrationTests.Data
+         [TestFixtureSetUp]
+         public void Setup()
+         {
++            AutoMapperConfig.CreateMaps();
+             _repository = new CodeChurnRepository();
+         }
+ 
+         [Test]
+-        public void Repository_GetRepos_CanGet()
++        public void ChurnRepository_GetRepos_CanGet()
+         {
+             var result = _repository.GetRepos();
+             Assert.IsTrue(result.Count() > 0);            
+         }
+ 
+         [Test]
+-        public void Repository_GetTrend_WithExtension()
++        public void ChurnRepository_GetTrend_WithExtension()
+         {
+             // Arrange
+             int repoId;
+@@ -50,7 +51,7 @@ namespace CodeQualityPortal.IntegrationTests.Data
+         }
+ 
+         [Test]
+-        public void Repository_GetTrend_WithoutExtension()
++        public void ChurnRepository_GetTrend_WithoutExtension()
+         {
+             // Arrange
+             int repoId;
+@@ -74,7 +75,7 @@ namespace CodeQualityPortal.IntegrationTests.Data
+         }
+ 
+         [Test]
+-        public void Repository_GetTrend_WithBogusExtension()
++        public void ChurnRepository_GetTrend_WithBogusExtension()
+         {
+             // Arrange
+             int repoId;
+@@ -98,7 +99,7 @@ namespace CodeQualityPortal.IntegrationTests.Data
+         }
+ 
+         [Test]
+-        public void Repository_GetFilesByDate_WithoutExtension()
++        public void ChurnRepository_GetFilesByDate_WithoutExtension()
+         {
+             // Arrange
+             int repoId;
+@@ -122,7 +123,7 @@ namespace CodeQualityPortal.IntegrationTests.Data
+         }
+ 
+         [Test]
+-        public void Repository_GetFilesByDate_WithExtension()
++        public void ChurnRepository_GetFilesByDate_WithExtension()
+         {
+             // Arrange
+             int repoId;
+@@ -149,7 +150,7 @@ namespace CodeQualityPortal.IntegrationTests.Data
+         }
+ 
+         [Test]
+-        public void Repository_GetCommitsByDate_WithExtension()
++        public void ChurnRepository_GetCommitsByDate_WithExtension()
+         {
+             // Arrange
+             int repoId;
+@@ -175,7 +176,7 @@ namespace CodeQualityPortal.IntegrationTests.Data
+         }
+ 
+         [Test]
+-        public void Repository_GetCommitsByDate_WithoutExtension()
++        public void ChurnRepository_GetCommitsByDate_WithoutExtension()
+         {
+             // Arrange
+             int repoId;
+@@ -199,7 +200,7 @@ namespace CodeQualityPortal.IntegrationTests.Data
+         }
+ 
+         [Test]
+-        public void Repository_GetFilesByCommit_WithExtension()
++        public void ChurnRepository_GetFilesByCommit_WithExtension()
+         {
+             // Arrange            
+             int commitId;
+@@ -221,5 +222,12 @@ namespace CodeQualityPortal.IntegrationTests.Data
+             // Assert
+             CollectionAssert.IsNotEmpty(result);
+         }
++
++        [Test]
++        public void ChurnRepository_GetWorst()
++        {
++            var result = _repository.GetWorst(DateTime.Now.AddYears(-1), DateTime.Now, 5);
++            Assert.IsTrue(result.Count > 0);
++        }
+     }
+ }
+diff --git a/CodeQualityPortal.IntegrationTests/Data/MetricsRepositoryTests.cs b/CodeQualityPortal.IntegrationTests/Data/MetricsRepositoryTests.cs
+index 2ebf0f4..880c1b0 100644
+--- a/CodeQualityPortal.IntegrationTests/Data/MetricsRepositoryTests.cs
++++ b/CodeQualityPortal.IntegrationTests/Data/MetricsRepositoryTests.cs
+@@ -73,6 +73,13 @@ namespace CodeQualityPortal.IntegrationTests.Data
+             // Act
+             var result = _repository.GetModules(tag, dateId);
+             Assert.IsTrue(result.Count() > 0);
+-        }     
++        }
++
++        [Test]
++        public void MetricsRepository_GetWorst()
++        {
++            var result = _repository.GetWorst(DateTime.Now.AddYears(-1), DateTime.Now, 5);
++            Assert.IsNotNull(result);
++        }
+     }
+ }
+diff --git a/CodeQualityPortal/App_Start/AutoMapperConfig.cs b/CodeQualityPortal/App_Start/AutoMapperConfig.cs
+index ba1c36b..12ec5d6 100644
+--- a/CodeQualityPortal/App_Start/AutoMapperConfig.cs
++++ b/CodeQualityPortal/App_Start/AutoMapperConfig.cs
+@@ -53,6 +53,19 @@ namespace CodeQualityPortal
+             Mapper.CreateMap<FactMetrics, MemberItem>()
+                 .ForMember(m => m.Id, opt => opt.MapFrom(src => src.Member.MemberId))
+                 .ForMember(m => m.Name, opt => opt.MapFrom(src => src.Member.Name));
++
++            Mapper.CreateMap<FactMetrics, MemberSummary>()
++                .ForMember(m => m.Tag, opt => opt.MapFrom(src => src.Member.Type.Namespace.Module.Target.Tag))
++                .ForMember(m => m.Module, opt => opt.MapFrom(src => src.Member.Type.Namespace.Module.Name))
++                .ForMember(m => m.Namespace, opt => opt.MapFrom(src => src.Member.Type.Namespace.Name))
++                .ForMember(m => m.Type, opt => opt.MapFrom(src => src.Member.Type.Name))
++                .ForMember(m => m.Id, opt => opt.MapFrom(src => src.Member.MemberId))
++                .ForMember(m => m.Name, opt => opt.MapFrom(src => src.Member.Name));
++
++            Mapper.CreateMap<FactCodeChurn, FileChurnSummary>()
++                .ForMember(m => m.Date, opt => opt.MapFrom(src => src.Date.Date))
++                .ForMember(m => m.FileName, opt => opt.MapFrom(src => src.File.FileName))
++                .ForMember(m => m.Url, opt => opt.MapFrom(src => src.File.Url));
+         }       
+     }
+ }
+\ No newline at end of file
+diff --git a/CodeQualityPortal/CodeQualityPortal.csproj b/CodeQualityPortal/CodeQualityPortal.csproj
+index 4234e89..a3c50b9 100644
+--- a/CodeQualityPortal/CodeQualityPortal.csproj
++++ b/CodeQualityPortal/CodeQualityPortal.csproj
+@@ -209,10 +209,13 @@
+     <Compile Include="Properties\AssemblyInfo.cs" />
+     <Compile Include="ViewModels\CodeChurnByDate.cs" />
+     <Compile Include="ViewModels\CommitCodeChurn.cs" />
++    <Compile Include="ViewModels\FileChurnSummary.cs" />
+     <Compile Include="ViewModels\FileCodeChurn.cs" />
+     <Compile Include="ViewModels\Member.cs" />
++    <Compile Include="ViewModels\MemberSummary.cs" />
+     <Compile Include="ViewModels\Namespace.cs" />
+     <Compile Include="ViewModels\MemberItem.cs" />
++    <Compile Include="ViewModels\TopWorst.cs" />
+     <Compile Include="ViewModels\TypeItem.cs" />
+     <Compile Include="ViewModels\Type.cs" />
+     <Compile Include="ViewModels\NamespaceItem.cs" />
+diff --git a/CodeQualityPortal/Common/HtmlHelpers.cs b/CodeQualityPortal/Common/HtmlHelpers.cs
+index b10f187..7582745 100644
+--- a/CodeQualityPortal/Common/HtmlHelpers.cs
++++ b/CodeQualityPortal/Common/HtmlHelpers.cs
+@@ -49,6 +49,28 @@ namespace CodeQualityPortal.Common
+             }
+ 
+             return actionMatch && routeParamMatch && controllerMatch;
+-        }        
++        }
++        
++        public static MvcHtmlString FormatDate (this HtmlHelper helper, DateTime date)
++        {
++            return new MvcHtmlString(date.ToShortDateString());
++        }
++
++        public static MvcHtmlString FormatNumber(this HtmlHelper helper, int number)
++        {
++            return new MvcHtmlString(number.ToString("N0"));
++        }
++
++        public static MvcHtmlString FormatNumber(this HtmlHelper helper, int? number)
++        {
++            if (number.HasValue)
++            {
++                return FormatNumber(helper, number.Value);
++            }
++            else
++            {
++                return new MvcHtmlString(string.Empty);
++            }
++        }
+     }
+ }
+\ No newline at end of file
+diff --git a/CodeQualityPortal/Controllers/HomeController.cs b/CodeQualityPortal/Controllers/HomeController.cs
+index 820d78c..8aa8119 100644
+--- a/CodeQualityPortal/Controllers/HomeController.cs
++++ b/CodeQualityPortal/Controllers/HomeController.cs
+@@ -1,9 +1,11 @@
+-﻿using System.Web.Mvc;
++﻿using System;
++using System.Web.Mvc;
+ 
+ using Newtonsoft.Json;
+ using Newtonsoft.Json.Serialization;
+ 
+ using CodeQualityPortal.Data;
++using CodeQualityPortal.ViewModels;
+ 
+ namespace CodeQualityPortal.Controllers
+ {
+@@ -20,7 +22,13 @@ namespace CodeQualityPortal.Controllers
+ 
+         public ActionResult Index()
+         {
+-            return View();
++            const int topX = 5;
++            const int days = 7;
++            var dateFrom = DateTime.Now.AddDays(days * -1);
++            var dateTo = DateTime.Now;            
++            var churnTopWorst = _codeChurnRepository.GetWorst(dateFrom, dateTo, topX);
++            var fileTopWorst = _metricsRepository.GetWorst(dateFrom, dateTo, topX);
++            return View(new TopWorst { ChurnItems = churnTopWorst, MemberItems = fileTopWorst });
+         }
+ 
+         public ActionResult Churn()
+diff --git a/CodeQualityPortal/Data/CodeChurnRepository.cs b/CodeQualityPortal/Data/CodeChurnRepository.cs
+index c00bab9..64e7299 100644
+--- a/CodeQualityPortal/Data/CodeChurnRepository.cs
++++ b/CodeQualityPortal/Data/CodeChurnRepository.cs
+@@ -1,8 +1,11 @@
+-﻿using CodeQualityPortal.ViewModels;
+-using System;
++﻿using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ 
++using AutoMapper;
++
++using CodeQualityPortal.ViewModels;
++
+ namespace CodeQualityPortal.Data
+ {
+     public class CodeChurnRepository : ICodeChurnRepository
+@@ -177,6 +180,20 @@ namespace CodeQualityPortal.Data
+                     TotalChurn = s.TotalChurn
+                 }).ToList();
+             }            
+-        }        
++        }
++
++        public IList<FileChurnSummary> GetWorst(DateTime dateFrom, DateTime dateTo, int topX)
++        {
++            using (var context = new CodeQualityContext())
++            {
++                var files = context.Churn
++                    .Where(w => w.Date.Date >= dateFrom && w.Date.Date <= dateTo && w.File != null)
++                    .OrderByDescending(o => o.TotalChurn)
++                    .Take(topX);
++
++                var items = Mapper.Map<IList<FileChurnSummary>>(files);
++                return items;                
++            }
++        }
+     }
+ }
+\ No newline at end of file
+diff --git a/CodeQualityPortal/Data/ICodeChurnRepository.cs b/CodeQualityPortal/Data/ICodeChurnRepository.cs
+index 7010a07..948772d 100644
+--- a/CodeQualityPortal/Data/ICodeChurnRepository.cs
++++ b/CodeQualityPortal/Data/ICodeChurnRepository.cs
+@@ -12,5 +12,6 @@ namespace CodeQualityPortal.Data
+         IList<CommitCodeChurn> GetCommitsByDate(int repoId, int dateId, string fileExtension);
+         IList<FileCodeChurn> GetFilesByCommit(int commitId, string fileExtension);
+         IList<FileCodeChurn> GetFilesByDate(int repoId, int dateId, string fileExtension, int? topX);
++        IList<FileChurnSummary> GetWorst(DateTime dateFrom, DateTime dateTo, int topX);
+     }
+ }
+\ No newline at end of file
+diff --git a/CodeQualityPortal/Data/IMetricsRepository.cs b/CodeQualityPortal/Data/IMetricsRepository.cs
+index 14faf0f..45cba80 100644
+--- a/CodeQualityPortal/Data/IMetricsRepository.cs
++++ b/CodeQualityPortal/Data/IMetricsRepository.cs
+@@ -30,6 +30,7 @@ namespace CodeQualityPortal.Data
+         // 5 - members
+         IList<Member> GetMembersByType(int typeId);
+         IList<TrendItem> GetSingleMemberTrend(int memberId, DateTime dateFrom, DateTime dateTo);
+-        
++
++        IList<MemberSummary> GetWorst(DateTime dateFrom, DateTime to, int topX);
+     }
+ }
+\ No newline at end of file
+diff --git a/CodeQualityPortal/Data/MetricsRepository.cs b/CodeQualityPortal/Data/MetricsRepository.cs
+index 571258c..46966a8 100644
+--- a/CodeQualityPortal/Data/MetricsRepository.cs
++++ b/CodeQualityPortal/Data/MetricsRepository.cs
+@@ -199,5 +199,20 @@ namespace CodeQualityPortal.Data
+                 return items;
+             }            
+         }
++
++        public IList<MemberSummary> GetWorst(DateTime dateFrom, DateTime dateTo, int topX)
++        {
++            using (var context = new CodeQualityContext())
++            {
++                var metricsItems = context.Metrics
++                    .Where(w => w.Date.Date >= dateFrom && w.Date.Date <= dateTo)
++                    .OrderBy(o => o.MaintainabilityIndex)
++                    .Take(topX)
++                    .ToList();
++
++                var items = Mapper.Map<IList<MemberSummary>>(metricsItems);
++                return items;
++            }            
++        }
+     }
+ }
+\ No newline at end of file
+diff --git a/CodeQualityPortal/ViewModels/FileChurnSummary.cs b/CodeQualityPortal/ViewModels/FileChurnSummary.cs
+new file mode 100644
+index 0000000..5094e11
+--- /dev/null
++++ b/CodeQualityPortal/ViewModels/FileChurnSummary.cs
+@@ -0,0 +1,9 @@
++﻿using System;
++
++namespace CodeQualityPortal.ViewModels
++{
++    public class FileChurnSummary : FileCodeChurn
++    {
++        public DateTime Date { get; set; }
++    }
++}
+\ No newline at end of file
+diff --git a/CodeQualityPortal/ViewModels/MemberSummary.cs b/CodeQualityPortal/ViewModels/MemberSummary.cs
+new file mode 100644
+index 0000000..664b37a
+--- /dev/null
++++ b/CodeQualityPortal/ViewModels/MemberSummary.cs
+@@ -0,0 +1,10 @@
++﻿namespace CodeQualityPortal.ViewModels
++{
++    public class MemberSummary : MetricsItem
++    {
++        public string Tag { get; set; }
++        public string Module { get; set; }
++        public string Namespace { get; set; }
++        public string Type { get; set; }
++    }
++}
+\ No newline at end of file
+diff --git a/CodeQualityPortal/ViewModels/TopWorst.cs b/CodeQualityPortal/ViewModels/TopWorst.cs
+new file mode 100644
+index 0000000..5ad5e97
+--- /dev/null
++++ b/CodeQualityPortal/ViewModels/TopWorst.cs
+@@ -0,0 +1,10 @@
++﻿using System.Collections.Generic;
++
++namespace CodeQualityPortal.ViewModels
++{
++    public class TopWorst
++    {
++        public ICollection<FileChurnSummary> ChurnItems { get; set; }
++        public ICollection<MemberSummary> MemberItems { get; set; }
++    }
++}
+\ No newline at end of file
+diff --git a/CodeQualityPortal/Views/Home/Index.cshtml b/CodeQualityPortal/Views/Home/Index.cshtml
+index 5bc5f7a..1947b20 100644
+--- a/CodeQualityPortal/Views/Home/Index.cshtml
++++ b/CodeQualityPortal/Views/Home/Index.cshtml
+@@ -1,48 +1,64 @@
+-﻿@{
+-    ViewBag.Title = "Home Page";
+-}
+-
+-@section JavascriptInHead
+-{   
+-    @*<script id="scriptInit" type="text/javascript">
+-        $(document).ready(function () {
+-
+-            // generate some random data
+-            var countries = 'US,Germany,UK,Japan,Italy,Greece'.split(','),
+-                data = [];
+-            for (var i = 0; i < countries.length; i++) {
+-                data.push({
+-                    country: countries[i],
+-                    downloads: Math.round(Math.random() * 20000),
+-                    sales: Math.random() * 10000,
+-                    expenses: Math.random() * 5000
+-                });
+-            }
+-
+-            // create grid and show data
+-            var grid = new wijmo.grid.FlexGrid('#theGrid');
+-            grid.itemsSource = data;
++﻿@using CodeQualityPortal.ViewModels;
++@model TopWorst
+ 
+-            // create a chart and show the same data    
+-            var chart = new wijmo.chart.FlexChart('#theChart');
+-            chart.initialize({
+-                itemsSource: data,
+-                bindingX: 'country',
+-                series: [
+-                    { name: 'Sales', binding: 'sales' },
+-                    { name: 'Expenses', binding: 'expenses' },
+-                    { name: 'Downloads', binding: 'downloads', chartType: wijmo.chart.ChartType.LineSymbols }]
+-            });
+-        });
+-    </script>*@
++@if (Model.MemberItems.Any())
++{
++    <h3>Top 5 worst members for the past 7 days</h3>
++    <table class="table table-stiped table-condensed files">
++        <thead>
++            <tr>
++                <th>Tag</th>
++                <th>Module</th>
++                <th>Namespace</th>
++                <th>Type</th>
++                <th>Member</th>
++                <th>Maintainability Index</th>
++                <th>Cyclomatic Complexity</th>
++                <th>Lines of Code</th>
++                <th>Class Coupling</th>
++                <th>Depth of Inheritance</th>                
++            </tr>
++        </thead>
++        @foreach(MemberSummary item in Model.MemberItems)
++        { 
++            <tr>
++                <td>@item.Tag</td>
++                <td>@item.Module</td>
++                <td>@item.Namespace</td>
++                <td>@item.Type</td>
++                <td>@item.Name</td>
++                <td>@item.MaintainabilityIndex</td>
++                <td>@item.CyclomaticComplexity</td>
++                <td>@Html.FormatNumber(item.LinesOfCode)</td>
++                <td>@item.ClassCoupling</td>
++                <td>@item.DepthOfInheritance</td>                
++            </tr>
++        }
++    </table>
+ }
+ 
+-@*<h1>Hello</h1>
+-
+-<p>This is a FlexGrid control:</p>
+-<div id="theGrid" style="width:100%;height:auto;"></div>
+-
+-<p>And this is a FlexChart:</p>
+-<div id="theChart" style="width:100%;height:350px;"></div>
+-
+-<p>That's it for now...</p>*@
+\ No newline at end of file
++@if (Model.ChurnItems.Any())
++{
++    <h3 style="margin-top:75px;">Files with highest code churn for the past 7 days</h3>
++    <table class="table table-stiped table-condensed files">
++        <thead>
++            <tr>
++                <th>Date</th>
++                <th>File</th>
++                <th>Lines Added</th>
++                <th>Lines Deleted</th>
++                <th>Total Churn</th>                
++            </tr>
++        </thead>
++        @foreach (FileChurnSummary item in Model.ChurnItems)
++        {
++            <tr>
++                <td>@Html.FormatDate(item.Date)</td>
++                <td>@item.FileName</td>
++                <td>@Html.FormatNumber(item.LinesAdded)</td>
++                <td>@Html.FormatNumber(item.LinesDeleted)</td>
++                <td>@Html.FormatNumber(item.LinesDeleted)</td>                
++            </tr>
++        }
++    </table>
++}
+\ No newline at end of file
+-- 
+2.1.1

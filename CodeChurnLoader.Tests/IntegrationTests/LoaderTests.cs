@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Linq;
 
 using NUnit.Framework;
 
@@ -61,9 +62,11 @@ namespace CodeChurnLoader.Tests.IntegrationTests
         public void Loader_Load_CanLoad()
         {
             LoaderContext context = ContextTests.CreateTestContext();
-            Loader loader = new Loader(context, new TestLogger());
-            RepoCredentials repoCredentials = ConfigurationManager.GetSection("RepoCredentials") as RepoCredentials;
-            var provider = new Data.Github.GithubProvider(repoCredentials);
+            Loader loader = new Loader(context, new TestLogger());            
+            var providerConfig = (ConfigurationManager.GetSection("LoaderConfiguration") as LoaderConfigurationSection)
+                .Providers
+                .Where(w => w.Type == ProviderType.Github).First();
+            var provider = new Data.Github.GithubProvider(new Data.Github.GithubService(providerConfig));
             loader.Load(provider, "CodeMetricsLoader", new DateTime(2013, 1, 1), new DateTime(2015, 1, 1));
         }
     }
