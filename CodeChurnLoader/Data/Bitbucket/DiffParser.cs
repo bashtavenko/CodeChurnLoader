@@ -10,7 +10,7 @@ namespace CodeChurnLoader.Data.Bitbucket
             var files = new List<File>();
 
             var diffRegex = new Regex("diff --git");
-            var fileNameRegex = new Regex("(?<=\\+\\+\\+ b/).*[^\\r\\n]");            
+            var fileNameRegex = new Regex("(?<=diff --git a/)(.*?)(?= b/)");
             var plusRegex = new Regex("^\\+", RegexOptions.Multiline); // Will match +++ as well
             var minusRegex = new Regex("^\\-", RegexOptions.Multiline);            
             var diffMatches  = diffRegex.Matches(input);
@@ -25,7 +25,9 @@ namespace CodeChurnLoader.Data.Bitbucket
                 var fileNameMatch = fileNameRegex.Match(diffText);
                 var plusMatches = plusRegex.Matches(diffText);
                 var minusMatches = minusRegex.Matches(diffText);
-                files.Add(new File { FileName = fileNameMatch.Value, Additions = plusMatches.Count - 1, Deletions = minusMatches.Count - 1 });                
+                files.Add(new File { FileName = fileNameMatch.Value,
+                    Additions = plusMatches.Count == 0 ? 0 : plusMatches.Count - 1,
+                    Deletions = minusMatches.Count == 0 ? 0 : minusMatches.Count - 1});                
             }
 
             return files;

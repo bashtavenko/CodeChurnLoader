@@ -79,6 +79,7 @@
   <ItemGroup>
     <Compile Include="AutoMapperTests.cs" />
     <Compile Include="DiffParserTests.cs" />
+    <Compile Include="IntegrationTests\BitbucketProviderTests.cs" />
     <Compile Include="IntegrationTests\GithubServiceTests.cs" />
     <Compile Include="IntegrationTests\BitbucketServiceTests.cs" />
     <Compile Include="IntegrationTests\ContextTests.cs" />
@@ -88,15 +89,18 @@
     <Compile Include="TestLogger.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SampleFiles\new-binary-file-diff.txt" />
     <Content Include="SampleFiles\diff3.txt" />
     <Content Include="SampleFiles\diff4.txt" />
     <None Include="App.config" />
+    <None Include="SampleFiles\commit-dbf.json" />
     <None Include="SampleFiles\Github\Commits.json" />
     <None Include="SampleFiles\Github\OneCommit.json" />
     <None Include="packages.config" />
     <None Include="SampleFiles\commits-lastpage.json" />
     <None Include="SampleFiles\commits.json" />
     <Content Include="SampleFiles\diff2.txt" />
+    <Content Include="SampleFiles\ridiculously-long-diff.txt" />
     <None Include="SampleFiles\singlecommit-no-user.json" />
     <None Include="SampleFiles\singlecommit.json" />
   </ItemGroup>

@@ -12,7 +12,7 @@ using CodeChurnLoader.Data.Bitbucket;
 using Newtonsoft.Json;
 
 
-namespace CodeChurnLoader.Tests.IntegrationTests
+namespace CodeChurnLoader.Tests
 {
     [TestFixture]
     public class BtbbucketProviderTests
@@ -73,11 +73,32 @@ namespace CodeChurnLoader.Tests.IntegrationTests
         }
 
         [Test]
+        public void BitbucketProvider_GetLongCommit()
+        {
+            // Arrange
+            _serviceMock.Setup(s => s.GetCommits(It.IsAny<string>(), It.IsAny<string>())).Returns(GetJsonFromFile("commit-dbf.json"));
+            _serviceMock.Setup(s => s.GetDiff(It.IsAny<string>())).Returns(GetJsonFromFile("ridiculously-long-diff.json"));
+
+            // Act
+            List<CodeChurnLoader.Data.Commit> commits = _IGitProvider.GetCommits("CodeMetricsLoader", DateTime.Now.AddYears(-2), DateTime.Now);
+
+            // Assert
+            Assert.AreEqual(60, commits.Count);
+        }
+
+        [Test]
         public void BitbucketProvider_ParseCommitWithoutUser()
         {
             var json = GetJsonFromFile("singlecommit-no-user.json");
             var header = JsonConvert.DeserializeObject<CommitHeader>(json);
             Assert.AreEqual(1, header.Commits.Count);
+        }
+
+        [Test]
+        public void BitbucketProvider_GetSingleCommit()
+        {
+            var json = GetJsonFromFile("commit-dbf.json");
+            var commit = JsonConvert.DeserializeObject<CodeChurnLoader.Data.Bitbucket.Commit>(json);            
         }
         
         private string GetJsonFromFile(string fileName)

@@ -1,0 +1,64 @@
+﻿{
+    "hash": "85a615bf5876b81d0ca025b2e7ac20f6c67cedbf",
+    "links": {
+        "self": {
+            "href": "https://bitbucket.org/api/2.0/repositories/progfin-ondemand/lisa/commit/85a615bf5876b81d0ca025b2e7ac20f6c67cedbf"
+        },
+        "comments": {
+            "href": "https://bitbucket.org/api/2.0/repositories/progfin-ondemand/lisa/commit/85a615bf5876b81d0ca025b2e7ac20f6c67cedbf/comments"
+        },
+        "patch": {
+            "href": "https://bitbucket.org/api/2.0/repositories/progfin-ondemand/lisa/patch/85a615bf5876b81d0ca025b2e7ac20f6c67cedbf"
+        },
+        "html": {
+            "href": "https://bitbucket.org/progfin-ondemand/lisa/commits/85a615bf5876b81d0ca025b2e7ac20f6c67cedbf"
+        },
+        "diff": {
+            "href": "https://bitbucket.org/api/2.0/repositories/progfin-ondemand/lisa/diff/85a615bf5876b81d0ca025b2e7ac20f6c67cedbf"
+        },
+        "approve": {
+            "href": "https://bitbucket.org/api/2.0/repositories/progfin-ondemand/lisa/commit/85a615bf5876b81d0ca025b2e7ac20f6c67cedbf/approve"
+        }
+    },
+    "repository": {
+        "links": {
+            "self": {
+                "href": "https://bitbucket.org/api/2.0/repositories/progfin-ondemand/lisa"
+            },
+            "html": {
+                "href": "https://bitbucket.org/progfin-ondemand/lisa"
+            },
+            "avatar": {
+                "href": "https://d3oaxc4q5k2d6q.cloudfront.net/m/f10402dfbb39/img/language-avatars/default_16.png"
+            }
+        },
+        "uuid": "{8cf24d67-e15c-460b-b684-ae4f3b1fe2a3}",
+        "full_name": "progfin-ondemand/lisa",
+        "name": "LISA"
+    },
+    "author": {
+        "raw": "Stan <StanBPublic@live.com>",
+        "user": {
+            "username": "stanbpublic",
+            "display_name": "Stan B",
+            "uuid": "{3509dad7-90c9-4905-8706-3dc39ecc672f}",
+            "links": {
+                "self": {
+                    "href": "https://bitbucket.org/api/2.0/users/stanbpublic"
+                },
+                "html": {
+                    "href": "https://bitbucket.org/stanbpublic"
+                },
+                "avatar": {
+                    "href": "https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Oct/12/stanbpublic-avatar-1580570491-7_avatar.png"
+                }
+            }
+        }
+    },
+    "participants": [
+    ],
+    "parents": [
+    ],
+    "date": "2014-12-03T22:52:53+00:00",
+    "message": "Inital commit\n"
+}

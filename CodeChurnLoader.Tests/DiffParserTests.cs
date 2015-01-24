@@ -60,6 +60,35 @@ namespace CodeChurnLoader.Tests
             Assert.AreEqual(1, files.Count);
             AssertFile(files, 0, name, additions, deletions);            
         }
+
+        [Test]
+        public void DiffParser_ParseRidiculouslyLongDiff()
+        {
+            // Arrange
+            string diff = GetJsonFromFile("ridiculously-long-diff.txt");
+
+            // Act
+            var files = _diffParser.Parse(diff);
+
+            // Assert
+            Assert.AreEqual(59, files.Count);
+            var blanFileNames = files.Where(f => f.FileName == string.Empty).ToList();
+            Assert.AreEqual(0, blanFileNames.Count);
+        }
+
+        [Test]
+        public void DiffParser_ParseNewBinaryFileDiff()
+        {
+            // Arrange
+            string diff = GetJsonFromFile("new-binary-file-diff.txt");
+
+            // Act
+            var files = _diffParser.Parse(diff);
+
+            // Assert
+            Assert.AreEqual(1, files.Count);
+            AssertFile(files, 0, "fonts/glyphicons-halflings-regular.woff", 0, 0);
+        }
         
         private void AssertFile (ICollection<Data.Bitbucket.File> files, int index, string fileName, int additions, int deletions)
         {
