@@ -54,10 +54,10 @@ namespace CodeChurnLoader
             _logger.Log("Saving to database...");
 
             var dimDate = new DimDate(runDate);
-            dimDate = GetOrAddEntity<DimDate>(_context.Dates, dimDate, delegate(DimDate d) { return d.Date == dimDate.Date; });            
+            dimDate = GetOrAddEntity<DimDate>(_context.Dates, dimDate, delegate(DimDate d) { return d.Date == dimDate.Date; }, true);            
             
             var repo = new DimRepo { Name = repoName };
-            repo = GetOrAddEntity<DimRepo>(_context.Repos, repo, delegate(DimRepo r) { return r.Name == repo.Name; });
+            repo = GetOrAddEntity<DimRepo>(_context.Repos, repo, delegate(DimRepo r) { return r.Name == repo.Name; }, true);
             FactCodeChurn churn;
             foreach (var commit in commits)
             {
@@ -73,7 +73,7 @@ namespace CodeChurnLoader
                 {
                     DimFile dimFile = Mapper.Map<DimFile>(file);
                     dimFile.Commit = dimCommit;
-                    _context.Files.Add(dimFile);
+                    dimFile = GetOrAddEntity<DimFile>(_context.Files, dimFile, delegate(DimFile f) { return f.FileName == dimFile.FileName; }, false);
                     churn = Mapper.Map<FactCodeChurn>(file);
                     churn.File = dimFile;
                     churn.Date = dimDate;
@@ -111,7 +111,7 @@ namespace CodeChurnLoader
         /// <param name="src">Entity itself</param>
         /// <param name="where">Where clause used to search for this entity</param>
         /// <returns>Newly added entity of entity from database</returns>
-        private T GetOrAddEntity<T>(DbSet<T> list, T src, Func<T, bool> where) where T : class
+        private T GetOrAddEntity<T>(DbSet<T> list, T src, Func<T, bool> where, bool saveChanges) where T : class
         {
             IEnumerable<T> srcFromDb = list
                 .Where(where)
@@ -124,7 +124,10 @@ namespace CodeChurnLoader
             else
             {
                 list.Add(src);
-                _context.SaveChanges();
+                if (saveChanges)
+                {
+                    _context.SaveChanges();
+                }
                 return src;
             }
         }

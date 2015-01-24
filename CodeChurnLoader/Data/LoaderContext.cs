@@ -43,7 +43,7 @@ namespace CodeChurnLoader.Data
             modelBuilder.Entity<DimCommit>().Property(k => k.Url).IsRequired();
             modelBuilder.Entity<DimCommit>().Property(k => k.Committer).IsRequired();
             modelBuilder.Entity<DimCommit>().Property(k => k.Committer).HasColumnType("varchar").HasMaxLength(255);
-            modelBuilder.Entity<DimCommit>().Property(k => k.Message).HasColumnType("varchar").HasMaxLength(255);            
+            modelBuilder.Entity<DimCommit>().Property(k => k.Message);
             
             modelBuilder.Entity<DimFile>().HasKey(k => k.FileId);
             modelBuilder.Entity<DimFile>().Property(k => k.FileName).HasColumnType("varchar").HasMaxLength(255);
