@@ -71,9 +71,9 @@ namespace CodeChurnLoader
 
                 foreach (var file in commit.Files)
                 {
-                    DimFile dimFile = Mapper.Map<DimFile>(file);
-                    dimFile.Commit = dimCommit;
+                    DimFile dimFile = Mapper.Map<DimFile>(file);                    
                     dimFile = GetOrAddEntity<DimFile>(_context.Files, dimFile, delegate(DimFile f) { return f.FileName == dimFile.FileName; }, false);
+                    dimFile.Commits.Add(dimCommit);
                     churn = Mapper.Map<FactCodeChurn>(file);
                     churn.File = dimFile;
                     churn.Date = dimDate;

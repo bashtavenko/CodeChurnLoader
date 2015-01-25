@@ -1,8 +1,9 @@
 ﻿using System.Linq;
+using System.Text.RegularExpressions;
 
 using AutoMapper;
+
 using CodeChurnLoader.Data.Bitbucket;
-using System.Text.RegularExpressions;
 
 namespace CodeChurnLoader
 {

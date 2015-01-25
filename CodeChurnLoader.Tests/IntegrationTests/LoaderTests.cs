@@ -59,7 +59,7 @@ namespace CodeChurnLoader.Tests.IntegrationTests
             loader.SaveCommits(DateTime.Now, "CodeMetricsLoader", commits);
         }
 
-        [Test]
+        //[Test]
         public void Loader_Load_CanLoad()
         {
             LoaderContext context = ContextTests.CreateTestContext();
