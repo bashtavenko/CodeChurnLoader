@@ -15,14 +15,14 @@ or
 ```
 -- Files with most changes
 SELECT TOP 5
-f.FileName,
-TotalChurn = SUM(fc.LinesAdded) + SUM(fc.LinesModified) + SUM(fc.LinesDeleted)
+f.FileName, TotalChurn = SUM(TotalChurn)
 FROM DimCommit c 
-JOIN DimFile f ON f.CommitId = c.CommitId
+JOIN DimCommitFile dcf ON dcf.CommitId = c.CommitId
+JOIN DimFile f ON f.FileId = dcf.FileId
 JOIN FactCodeChurn fc ON fc.FileId = f.FileId
 JOIN DimDate d ON d.DateId = fc.DateId
 WHERE FileExtension = '.cs'
-AND d.DayOfMonth BETWEEN 20 AND 24
+--AND d.DayOfMonth BETWEEN 20 AND 24
 GROUP BY f.FileName
 ORDER BY TotalChurn desc
 ```
